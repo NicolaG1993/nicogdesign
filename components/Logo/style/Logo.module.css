@@ -1,0 +1,12 @@
+/* .logo > img {
+    height: 25px;
+    display: block;
+} */
+
+.logo {
+    height: 22px;
+    width: 75px;
+    background-image: var(--logo);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,87 @@
+/*SCREEN-NAV*/
+.screen-nav {
+    display: flex;
+    align-items: center;
+}
+.screen-nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.screen-nav li {
+    display: inline;
+}
+
+/*MOBILE-NAV*/
+.mobile-nav {
+    position: fixed;
+    background-color: var(--bg200);
+    height: 100vh;
+    width: 230px;
+    padding: 150px 0 50px 0;
+    right: 0;
+    z-index: 19;
+    left: 100%;
+    transition: transform 0.8s;
+}
+.mobile-nav li {
+    margin-bottom: 20px;
+    font-size: var(--size200);
+    text-align: center;
+}
+.mobile-nav > div > a {
+    height: 60px;
+    display: block;
+    /* padding: 0 45px; */
+}
+.mobile-nav > div > a > p {
+    border-bottom: 1px solid var(--color200);
+}
+.mobile-nav > div > a > p {
+    padding: 0 35px;
+    font-size: 15pt;
+    line-height: 60px;
+    transition: 0.2s ease;
+    letter-spacing: 3px;
+}
+.mobile-nav > div > a:hover {
+    background-color: var(--color200);
+}
+.nav-on {
+    opacity: 1;
+    transform: translateX(-100%);
+}
+
+/* NB! Questa versione di style é giá ottimizzata per l'esportazione!
+significa che é responsive in maniera autonoma, non adattata al design del progetto
+il css scritto finora funziona su desktop, per questo uso mediaquery ora */
+
+@media screen and (min-width: 1110px) {
+    .mobile-nav {
+        width: 17vw;
+        transition: transform 0.7s;
+    }
+}
+@media screen and (max-width: 720px) {
+    .mobile-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-nav > div > a {
+        height: 65px;
+    }
+    .mobile-nav > div > a > p {
+        text-align: center;
+        border-bottom: none;
+    }
+}
+@media screen and (max-width: 340px) {
+    .mobile-nav {
+        padding-top: 130px;
+        padding-bottom: 40px;
+    }
+}
