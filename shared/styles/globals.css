@@ -199,12 +199,21 @@ ul {
 }
 
 #WIP {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* height: 100%;*/
+    /* width: 100%; */
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+#WIP div {
+    text-align: center;
 }
 #WIP h1 {
     margin-bottom: 30px;
@@ -218,4 +227,24 @@ ul {
 }
 #WIP a:hover {
     font-style: italic;
+}
+
+@media screen and (max-width: 720px) {
+    #WIP div {
+        width: 360px;
+        text-align: start;
+    }
+}
+@media screen and (max-width: 400px) {
+    #WIP div {
+        width: 100%;
+    }
+    #WIP h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 350px) {
+    #WIP h1 {
+        font-size: 53px;
+    }
 }

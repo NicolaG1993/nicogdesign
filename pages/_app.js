@@ -15,8 +15,10 @@ function MyApp({ Component, pageProps }) {
         <Provider store={store}>
             {underDevelopment ? (
                 <div id="WIP">
-                    <h1>WORK IN PROGRESS</h1>
-                    <h3>Developer at work</h3>
+                    <div>
+                        <h1>WORK IN PROGRESS</h1>
+                        <h3>Developer at work</h3>
+                    </div>
 
                     <p>
                         <a href="mailto:nicog.designer@gmail.com">
