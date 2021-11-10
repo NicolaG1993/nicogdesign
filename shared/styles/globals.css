@@ -1,16 +1,221 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Mandali);
+@import url(https://fonts.googleapis.com/css?family=Mallanna);
+@import url(https://fonts.googleapis.com/css?family=Prata);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/***************COLOR SCHEMES***************/
+.theme-light {
+    --white: ghostwhite;
+    --black: rgb(11, 11, 12);
+    --bg000: white;
+    --bg100: ghostwhite;
+    --bg200: rgb(229, 229, 229);
+    --bg300: rgb(212, 212, 219);
+    --bg400: rgb(196, 196, 201);
+    --bg500: rgb(187, 187, 187);
+    --bg600: rgb(160, 160, 160);
+
+    --color-overlay: rgba(0, 140, 255, 0.445);
+    --color000: rgb(142, 202, 230);
+    --color100: cornflowerblue;
+    --color200: rgb(0, 140, 255);
+
+    --text: rgb(11, 11, 12);
+    --text-color: rgb(0, 140, 255);
+    --text-inverted: ghostwhite;
+    --selection: rgba(142, 202, 230, 0.75);
+    --logo: url(../../components/Logo/assets/logo-black.png);
+}
+.theme-dark {
+    --white: ghostwhite;
+    --black: rgb(11, 11, 12);
+    --bg000: rgb(0, 31, 84);
+    --bg100: rgb(10, 17, 40);
+    --bg200: #0d1117;
+    --bg300: rgb(4, 4, 15);
+    --bg400: rgb(18, 130, 162);
+    --bg500: rgb(4, 4, 15);
+    --bg600: rgb(0, 140, 255);
+    --color-overlay: rgba(0, 140, 255, 0.445);
+    --color000: rgb(142, 202, 230);
+    --color100: cornflowerblue;
+    --color200: rgb(0, 140, 255);
+
+    --text: white;
+    --text-color: rgb(0, 140, 255);
+    --text-inverted: ghostwhite;
+
+    --selection: rgba(142, 202, 230, 0.75);
+    --logo: url(../../components/Logo/assets/logo-white.png);
+} /*eliminare logo quando si fa svg*/
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    font-family: var(--fontA);
+    color: var(--text);
+    background: var(--bg000);
+    --fontA: "Quicksand";
+    --fontB: "Mandali";
+    --size-300: 0.42rem;
+    --size-200: 0.56rem;
+    --size-100: 0.75rem;
+    --size000: 1rem;
+    --size100: 1.33rem;
+    --size200: 1.77rem;
+    --size300: 2.37rem;
+    --size400: 3.16rem;
+    --size500: 4.21rem;
+    --size600: 5.61rem;
+    --size700: 7.48rem;
+    --left-indent: 1.33rem;
+    --transition: 0.2s ease;
+    --transition5: 0.5s ease;
+    --transition8: 0.8s ease;
+    /* --padding: var(--size-300) var(--size100); */
+    --padding: var(--size-300);
+    --padding2: var(--size200) var(--size100);
+    --padding3: var(--size300);
+    --padding4: var(--size-100);
+    /* scrivere var anche per font sizes e piu cose possibili */
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--fontB);
+    line-height: 1em;
+}
+
+h3,
+h4,
+h5 {
+    margin-bottom: var(--size-200);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    margin-bottom: var(--size000);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: var(--text);
+    transition: var(--transition);
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: var(--color000);
+}
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-* {
-  box-sizing: border-box;
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    transition: background var(--transition);
+    /* margin-top: 58px; */
+    /* overflow-x: hidden; */
+}
+/* .App > div:nth-child(2) { */
+/*Importante che App sia una classe, cosí id possono avere la prioritá*/
+/* padding: var(--padding3);
+} */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color200);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color000);
+}
+::-webkit-scrollbar-track {
+    background: var(--bg200);
+}
+
+::selection {
+    background: var(--color000);
+    padding: var(--size-300);
+}
+
+/***************OVERLAY***************/
+.overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: var(--color000);
+    z-index: 18;
+    padding: var(--size-300) var(--size100);
+}
+.overlayIn {
+    visibility: visible;
+    opacity: 33%;
+    transition: visibility 0s ease-in-out 0s, opacity 1.5s;
+}
+.overlayOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-in-out 0.5s, opacity 1s;
+}
+
+@media screen and (max-width: 900px) {
+    #tablet-line-breaker::after {
+        content: "\a";
+        white-space: pre;
+    }
+}
+@media screen and (max-width: 720px) {
+    #line-breaker::after {
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+#WIP {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#WIP h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#WIP p {
+    position: absolute;
+    bottom: 50px;
+}
+#WIP a:hover {
+    font-style: italic;
 }

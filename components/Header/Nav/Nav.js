@@ -15,16 +15,16 @@ const selectLayouts = (state) => state.toggleLayout.layouts[1];
 
 const links = [
     {
-        to: "/#servizi",
-        title: "Servizi",
+        to: "/",
+        title: "About me",
     },
     {
-        to: "/#contatto",
-        title: "Contatto",
+        to: "/portfolio",
+        title: "Portfolio",
     },
     {
-        to: "/#chi-siamo",
-        title: "L'azienda",
+        to: "/#contact",
+        title: "Contact",
     },
 ];
 

@@ -7,7 +7,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    column-gap: 30px;
+    column-gap: 50px;
 }
 .screen-nav li {
     display: inline;

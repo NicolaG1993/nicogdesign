@@ -9,11 +9,26 @@ import store from "../redux/store";
 import { createWrapper } from "next-redux-wrapper";
 
 function MyApp({ Component, pageProps }) {
+    const underDevelopment = true;
+
     return (
         <Provider store={store}>
-            <Layout>
-                <Component {...pageProps} />{" "}
-            </Layout>{" "}
+            {underDevelopment ? (
+                <div id="WIP">
+                    <h1>WORK IN PROGRESS</h1>
+                    <h3>Developer at work</h3>
+
+                    <p>
+                        <a href="mailto:nicog.designer@gmail.com">
+                            nicog.designer@gmail.com
+                        </a>
+                    </p>
+                </div>
+            ) : (
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
+            )}
         </Provider>
     );
 }

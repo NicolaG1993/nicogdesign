@@ -61,9 +61,7 @@ function Header() {
 
     const LogoLink = () => (
         <Link href={"/"} onClick={closeNav}>
-            <a>
-                <Logo size={{ height: "22px", width: "75px" }} />
-            </a>
+            <a>{/* <Logo size={{ height: "35px", width: "25px" }} /> */}</a>
         </Link>
     );
 
@@ -79,7 +77,7 @@ function Header() {
 
             <div className={styles["header-right-box"]}>
                 <Nav width={windowSize} />
-                <ColorModeButton />
+                {/* <ColorModeButton /> */}
             </div>
         </div>
     );

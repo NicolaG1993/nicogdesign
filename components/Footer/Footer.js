@@ -29,14 +29,14 @@ function Copyrights() {
     return (
         <div className={`${styles["copyrights"]} ${styles["darker-tone"]}`}>
             <h5>
-                Bordogna Silvano snc, © {currentYear} || Website by{" "}
-                <a
+                NGDesign, © {currentYear}
+                {/*|| Website by{" "} <a
                     href="https://www.nicogdesign.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     NGDesign
-                </a>
+                </a> */}
             </h5>
         </div>
     );
