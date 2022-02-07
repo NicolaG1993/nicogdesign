@@ -1,5 +1,5 @@
 function setTheme(themeName) {
-    localStorage.setItem("theme", themeName);
+    localStorage.setItem("ngd-theme", themeName);
     document.documentElement.className = themeName;
 }
 
@@ -9,14 +9,14 @@ function setTheme(themeName) {
 
 function keepTheme() {
     // const dispatch = useDispatch();
-    if (localStorage.getItem("theme")) {
-        if (localStorage.getItem("theme") === "theme-dark") {
+    if (localStorage.getItem("ngd-theme")) {
+        if (localStorage.getItem("ngd-theme") === "theme-dark") {
             setTheme("theme-dark");
-        } else if (localStorage.getItem("theme") === "theme-light") {
+        } else if (localStorage.getItem("ngd-theme") === "theme-light") {
             setTheme("theme-light");
         }
     } else {
-        setTheme("theme-dark");
+        setTheme("theme-light");
     }
 }
 

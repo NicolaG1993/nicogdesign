@@ -1,0 +1,25 @@
+#Footer,
+.copyrights {
+    padding: 10px 20px;
+    border-top: 3px black solid;
+}
+#Footer {
+    height: 350px;
+}
+#Footer > div:nth-child(1) {
+}
+
+.copyrights,
+.copyrights div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyrights div h5 {
+    margin-left: 15px;
+}
+
+.copyrights h5 {
+    margin: 0;
+    line-height: 23px;
+}

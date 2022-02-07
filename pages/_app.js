@@ -9,7 +9,7 @@ import store from "../redux/store";
 import { createWrapper } from "next-redux-wrapper";
 
 function MyApp({ Component, pageProps }) {
-    const underDevelopment = true;
+    const underDevelopment = false;
 
     return (
         <Provider store={store}>
