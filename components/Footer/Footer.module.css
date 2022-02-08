@@ -1,7 +1,7 @@
 #Footer,
 .copyrights {
     padding: 10px 20px;
-    border-top: 3px black solid;
+    border-top: 3px var(--text) solid;
 }
 #Footer {
     height: 350px;

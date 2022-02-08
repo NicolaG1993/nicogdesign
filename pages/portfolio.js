@@ -2,13 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import Button from "../components/Button/Button";
 
-import styles from "../shared/styles/Home.module.css";
+import styles from "../shared/styles/Portfolio.module.css";
 
 export default function Portfolio() {
     return (
-        <main>
+        <div id={styles["Portfolio"]}>
             <Head>
-                <title>Portfolio | Nicola Gaioni Design</title>
+                <title>Portfolio - NGD | Nicola Gaioni Design</title>
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:title"
+                    content="Portfolio - NGD | Nicola Gaioni Design"
+                />
             </Head>
 
             <h1>My Portfolio</h1>
@@ -63,7 +68,7 @@ export default function Portfolio() {
                 conviene fare una pagina a parte. Ci deve essere un pulsante per
                 scaricare il CV ed uno per tutto il portfolio.
             </section>
-        </main>
+        </div>
     );
 }
 

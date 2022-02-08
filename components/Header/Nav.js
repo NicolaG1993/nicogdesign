@@ -1,10 +1,30 @@
 import styles from "./Header.module.css";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useSelector, shallowEqual, useDispatch } from "react-redux";
 const ColorModeButton = dynamic(() => import("./ColorModeButton"), {
     ssr: false,
 });
 const selectLayouts = (state) => state.toggleLayout.layouts[1];
+
+const links = [
+    {
+        to: "/about",
+        title: "ABOUT",
+    },
+    {
+        to: "/portfolio",
+        title: "PORTFOLIO",
+    },
+    {
+        to: "/projects",
+        title: "PROJECTS",
+    },
+    {
+        to: "/contact",
+        title: "CONTACT",
+    },
+];
 
 function Nav({ close }) {
     let { active } = useSelector(selectLayouts, shallowEqual);
@@ -19,14 +39,19 @@ function Nav({ close }) {
             }
         >
             <div>
-                <h2 onClick={close}>CLOSE</h2>
+                <span onClick={close}>CLOSE</span>
             </div>
 
             <div className={styles["nav-box"]}>
-                <h2>ABOUT</h2>
-                <h2>PORTFOLIO</h2>
-                <h2>PROJECTS</h2>
-                <h2>CONTACT</h2>
+                <ul className={styles["header-nav-ul"]}>
+                    {links.map((link, i) => (
+                        <Link href={link.to} key={i}>
+                            <a onClick={() => closeNav()}>
+                                <li>{link.title} </li>
+                            </a>
+                        </Link>
+                    ))}
+                </ul>
             </div>
 
             <ColorModeButton />

@@ -14,9 +14,13 @@
 
 /***************COLOR SCHEMES***************/
 .theme-light {
+    --text: rgb(11, 11, 12);
+    --text-hover: rgb(65, 65, 65);
+    --text-inverted: ghostwhite;
     --white: ghostwhite;
     --black: rgb(11, 11, 12);
     --bg000: white;
+
     --bg100: ghostwhite;
     --bg200: rgb(229, 229, 229);
     --bg300: rgb(212, 212, 219);
@@ -29,17 +33,19 @@
     --color100: cornflowerblue;
     --color200: rgb(0, 140, 255);
 
-    --text: rgb(11, 11, 12);
-    --text-hover: rgb(65, 65, 65);
     --text-color: rgb(0, 140, 255);
-    --text-inverted: ghostwhite;
+
     --selection: rgba(142, 202, 230, 0.75);
     --logo: url(../../components/Logo/assets/logo-black.png);
 }
 .theme-dark {
+    --text: ghostwhite;
+    --text-hover: rgb(216, 216, 216);
+    --text-inverted: rgb(11, 11, 12);
     --white: ghostwhite;
     --black: rgb(11, 11, 12);
-    --bg000: rgb(0, 31, 84);
+    --bg000: rgb(11, 11, 12);
+
     --bg100: rgb(10, 17, 40);
     --bg200: #0d1117;
     --bg300: rgb(4, 4, 15);
@@ -53,7 +59,6 @@
 
     --text: white;
     --text-color: rgb(0, 140, 255);
-    --text-inverted: ghostwhite;
 
     --selection: rgba(142, 202, 230, 0.75);
     --logo: url(../../components/Logo/assets/logo-white.png);
@@ -127,9 +132,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-a:hover {
+/* a:hover {
     color: var(--color000);
-}
+} */
 ul {
     list-style-type: none;
     padding: 0;

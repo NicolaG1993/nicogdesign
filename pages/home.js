@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import TypeWriter from "../components/Home2/TypeWriter";
 import styles from "../shared/styles/Home2.module.css";
 import useScrollPosition from "../shared/utils/useScrollPosition";

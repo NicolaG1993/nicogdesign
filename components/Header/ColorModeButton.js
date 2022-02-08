@@ -42,10 +42,8 @@ export default function ColorModeButton() {
 
     return (
         <div className={styles["color-mode-wrap"]}>
-            <h2>
-                <span onClick={() => setColor("light")}>Light</span> /{" "}
-                <span onClick={() => setColor("dark")}>Dark</span>
-            </h2>
+            <span onClick={() => setColor("light")}>Light</span> <p>/</p>{" "}
+            <span onClick={() => setColor("dark")}>Dark</span>
         </div>
     );
 }
