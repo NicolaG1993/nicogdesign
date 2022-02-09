@@ -46,7 +46,7 @@ function Nav({ close }) {
                 <ul className={styles["header-nav-ul"]}>
                     {links.map((link, i) => (
                         <Link href={link.to} key={i}>
-                            <a onClick={() => close()}>
+                            <a onClick={close}>
                                 <li>{link.title} </li>
                             </a>
                         </Link>

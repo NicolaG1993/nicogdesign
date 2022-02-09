@@ -1,4 +1,5 @@
 import styles from "./Header.module.css";
+import Link from "next/link";
 import Facebook from "./assets/facebook.svg";
 import Instagram from "./assets/instagram.svg";
 import WhatsApp from "./assets/whatsapp.svg";
@@ -7,7 +8,11 @@ function Header({ close, toggle }) {
     return (
         <header id={styles["Header"]}>
             <div className={styles["header-box"]}>
-                <h2 onClick={close}>NGD</h2>
+                <Link href="/">
+                    <a className={styles["header-logo"]} onClick={close}>
+                        NGD
+                    </a>
+                </Link>
 
                 <div>
                     <a

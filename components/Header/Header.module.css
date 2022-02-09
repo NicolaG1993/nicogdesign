@@ -18,9 +18,14 @@
     align-items: center;
 }
 
+.header-logo,
 .header-box h2 {
     margin-bottom: 0;
     cursor: pointer;
+
+    font-family: var(--fontB);
+    font-size: 1.5em;
+    font-weight: bold;
 
     /* font-weight: 900;
     font-family: "Roboto", Arial, Helvetica, sans-serif; */

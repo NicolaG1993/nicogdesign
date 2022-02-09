@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import styles from "../shared/styles/About.module.css";
 
 export default function About() {
