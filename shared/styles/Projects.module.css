@@ -1,5 +1,5 @@
 #Projects {
-    padding: 150px 0px;
+    padding: 150px 0px 0px 0px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,10 +11,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
-    max-width: 970px;
+    max-width: 1090px;
     width: 100%;
     height: 100px;
-    padding: 0px 20px;
+    padding: 0px 60px;
 }
 
 .headings h1 {
@@ -45,9 +45,34 @@
     width: 100%;
     margin-top: 140px;
 }
+.projects > div {
+    width: 100%;
+    border-top: 3px var(--text) solid;
+    padding: 60px 60px;
+    display: flex;
+    justify-content: center;
+}
 .project-box {
     min-height: 350px;
-    border-top: 3px var(--text) solid;
+    max-width: 1000px;
+    width: 100%;
+}
+.project-box > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.project-box > div:nth-child(1) h2 {
+    font-weight: 900;
+    font-size: 32px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.project-box > div:nth-child(2) p {
+    max-width: 66.6%;
+    margin-bottom: 60px;
+    min-height: 120px;
 }
 
 @media screen and (max-width: 990px) {
