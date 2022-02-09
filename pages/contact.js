@@ -13,7 +13,9 @@ export default function Contact() {
                 />
             </Head>
 
-            <section className={styles[""]}></section>
+            <section className={styles[""]}>
+                <h1>CONTACT</h1>
+            </section>
         </div>
     );
 }

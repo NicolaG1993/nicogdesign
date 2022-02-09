@@ -1,4 +1,4 @@
-#Contact {
+#Projects {
     padding: 150px 20px;
     min-height: 100vh;
     display: flex;
@@ -7,6 +7,6 @@
 }
 
 @media screen and (max-width: 990px) {
-    #Nav {
+    #Projects {
     }
 }

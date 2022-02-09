@@ -6,7 +6,17 @@
     align-items: center;
 }
 
+#Contact h1 {
+    font-weight: 900;
+    line-height: 1em;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 90px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 990px) {
-    #Nav {
+    #Contact {
     }
 }
