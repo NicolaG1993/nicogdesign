@@ -1,68 +1,118 @@
 import Head from "next/head";
-import Image from "next/image";
-import Button from "../components/Button/Button";
-import Banner from "../components/Home/Banner/Banner";
-import styles from "../shared/styles/Home.module.css";
+import { useEffect } from "react";
+import TypeWriter from "../components/Home2/TypeWriter";
+import styles from "../shared/styles/Home2.module.css";
+import useScrollPosition from "../shared/utils/useScrollPosition";
 
 export default function Home() {
+    const { scrollTop } = useScrollPosition();
+
+    useEffect(() => {
+        const element = document.getElementById("HeadlineChange");
+        const content = document.getElementById("HeadlineContent");
+        let topPos = element.offsetTop;
+
+        scrollTop >= topPos - 500
+            ? (content.innerHTML = "CODING")
+            : (content.innerHTML = "DESIGN");
+    }, [scrollTop]);
+
     return (
-        <main>
+        <div id={styles["Home"]}>
             <Head>
                 <title>NGD | Nicola Gaioni Design</title>
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:title"
+                    content="NGD | Nicola Gaioni Design"
+                />
             </Head>
-            <Banner></Banner>
-            <section id={styles.Bio}>
+
+            <section className={styles["section-banner"]}>
+                <TypeWriter />
+            </section>
+
+            <section className={styles["section-intro"]}>
+                <p>
+                    NGD was founded on a belief in the power of
+                    &apos;live&apos;. We connect, inspire and create massive
+                    impact through music, culture and space.
+                </p>
+            </section>
+
+            <section className={styles["section-skills"]}>
+                <div id={styles["Headline"]}>
+                    <h2 id="HeadlineContent">DESIGN</h2>
+                </div>
+
                 <div>
-                    <h2>Who i am.</h2>
                     <p>
-                        My name is Nicola Gaioni and I&apos;m a graphic designer
-                        and a websites developer. I graduated as designer in
-                        2018 and currently I work as a freelancer on a wide
-                        range of graphic content including illustration,
-                        branding, graphic and UI/UX.
+                        Design é ... . Ho iniziato il mio percorso nel 2014,
+                        trasferendomi a Berlino dall&apos;Italia per studiare
+                        design e illustrazione, laureandomi con successo nel
+                        2018 a AID Berlin. Fin da subito mi é interessato il
+                        Webdesign e lo sviluppo di interfaccie, siti web e
+                        applicazioni, mostrando buoni risultati e maturando
+                        esperienza lavorando fino ad oggi su diversi progetti
+                        sia da freelancer che per aziende.
                     </p>
+                </div>
+
+                <div id="HeadlineChange">
                     <p>
-                        During the last years I have also had the opportunity to
-                        work as a Webdesigner and to approach the world of
-                        programming, graduating as FullStack Developer in 2021.
-                        I have achieved a good understanding of many coding
-                        languages and frameworks,{" "}
-                        <a>
-                            <strong>check my CV</strong>
-                        </a>{" "}
-                        to see them all!
-                    </p>
-                    <p>
-                        At the moment I am available for job positions and
-                        commissioned works.
+                        Webdevelopment é una skill fondamentale ai nostri tempi.
+                        Nel mio caso é stato naturale iniziare ad interessarmi
+                        alla programmazione in parallelo ai miei studi e dopo
+                        aver lavorato come webdesigner. Dopo diversi anni
+                        passati ad imparare HTML, CSS e Javascript ho deciso di
+                        iscrivermi a SPICED ACADEMY per diventare un
+                        programmatore full-stack nel 2021.
                     </p>
                 </div>
             </section>
-            {/* <section className={styles.smth}>
-                Qui ci va una bella grid con delle immagini
-            </section> */}
-            <section className={styles.smth3}>
-                <Button
-                    page="/portfolio"
-                    text="Go to my portfolio"
-                    type="internal"
-                    style="inverted-btn"
-                />
-                <br />
-                <Button
-                    page="/portfolio"
-                    text="Download my CV"
-                    type="internal"
-                    style="inverted-btn"
-                />
-                <br />
-                <Button
-                    page="/gallery"
-                    text="See my work"
-                    type="internal"
-                    style="inverted-btn"
-                />
+
+            <section className={styles["section-data"]}>
+                <h2>GITHUB STATS</h2>
+                <div>
+                    <div>
+                        <h3>Deploys</h3>
+                        <p>1.000</p>
+                    </div>
+                    <div>
+                        <h3>Projects</h3>
+                        <p>20</p>
+                    </div>
+                    <div>
+                        <h3>Collabs</h3>
+                        <p>1</p>
+                    </div>
+                    <div>
+                        <h3>Stackoverflow</h3>
+                        <p>1 Silver</p>
+                        <p>8 Bronze</p>
+                        <p>Since 01/01/2020</p>
+                    </div>
+                </div>
             </section>
-        </main>
+            {/*
+            <section className={styles["section-data"]}>
+                <h2>PROGETTI</h2>
+                <div>
+                    <div>
+                        <h3>Deploys</h3>
+                        <p>1.000</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles["section-data"]}>
+                <h2>IMMAGINI</h2>
+                <p>Preview di qualche progetto</p>
+                <p>Si potrebbe usare anche parallax</p>
+            </section> */}
+        </div>
     );
 }
+
+// BIO, DESIGN, WEBDEV
+// PROGETTI, IMMAGINI, IMMAGINI CON PARALLAX, GITHUB STATS,

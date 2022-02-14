@@ -48,7 +48,7 @@
 .projects > div {
     width: 100%;
     border-top: 3px var(--text) solid;
-    padding: 60px 60px;
+    padding: 100px 60px;
     display: flex;
     justify-content: center;
 }
@@ -56,12 +56,14 @@
     min-height: 350px;
     max-width: 1000px;
     width: 100%;
-}
-.project-box > div:nth-child(1) {
+
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
 }
+.project-box > div:nth-child(1) {
+    max-width: 66.6%;
+}
+
 .project-box > div:nth-child(1) h2 {
     font-weight: 900;
     font-size: 32px;
@@ -69,10 +71,43 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.project-box > div:nth-child(2) p {
-    max-width: 66.6%;
-    margin-bottom: 60px;
+.project-box > div:nth-child(1) h4 {
+    margin-bottom: 50px;
+}
+.project-box > div:nth-child(1) p {
+    margin-bottom: 35px;
     min-height: 120px;
+}
+
+.links-box {
+    max-width: 200px;
+}
+.link-box {
+    margin-top: 20px;
+    border: 2px var(--text) solid;
+    padding: 8px;
+    margin-right: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--fontB);
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--text);
+    background-color: var(--bg000);
+    transition: 0.2s ease;
+}
+.link-box:hover {
+    color: var(--text-inverted);
+    background-color: var(--text);
+}
+
+.picture-box {
+    border: 3px var(--text) solid;
+    width: 150px;
+    height: 150px;
+    position: relative;
 }
 
 @media screen and (max-width: 990px) {

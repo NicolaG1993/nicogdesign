@@ -16,7 +16,7 @@
 .theme-light {
     --text: rgb(11, 11, 12);
     --text-hover: rgb(65, 65, 65);
-    --text-inverted: ghostwhite;
+    --text-inverted: white;
     --white: ghostwhite;
     --black: rgb(11, 11, 12);
     --bg000: white;
@@ -72,7 +72,7 @@ html {
     color: var(--text);
     background: var(--bg000);
     --fontA: "Quicksand";
-    --fontB: "Mandali";
+    --fontB: "Roboto", Arial, Helvetica, sans-serif;
     --size-300: 0.42rem;
     --size-200: 0.56rem;
     --size-100: 0.75rem;
@@ -175,7 +175,12 @@ main {
 }
 
 ::selection {
-    background: var(--color000);
+    /* background: rgb(196, 5, 46); */
+    background: rgb(255, 171, 14);
+    /* background: rgb(135, 10, 236); */
+    /* background: rgb(101, 15, 172); */
+    /* background: var(--color000); */
+    color: var(--text-inverted);
     padding: var(--size-300);
 }
 

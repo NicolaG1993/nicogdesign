@@ -17,7 +17,7 @@ function Header({ close, toggle }) {
                 <div>
                     <a
                         className={styles["header-icon"]}
-                        href="https://www.instagram.com/damamyamamy"
+                        href="https://www.facebook.com/nicog.designer"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -25,7 +25,7 @@ function Header({ close, toggle }) {
                     </a>
                     <a
                         className={styles["header-icon"]}
-                        href="https://www.facebook.com/Da-Mamy-A-Mamy-105663897718034/"
+                        href="https://www.instagram.com/nik_gaioni"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
