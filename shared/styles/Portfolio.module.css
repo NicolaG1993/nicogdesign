@@ -1,9 +1,66 @@
 #Portfolio {
-    padding: 150px 20px;
+    padding: 150px 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#Portfolio h1 {
+    font-size: 120px;
+    font-weight: 900;
+    margin: 20px 0 140px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#Portfolio section {
+    /* margin: 40px 0; */
+    border-top: 3px var(--text) solid;
+    width: 100%;
+    padding: 80px 40px;
+}
+#Portfolio section h2 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    text-align: center;
+}
+#Portfolio section div {
+    padding-left: 20px;
+    max-width: 66%;
+    margin-bottom: 80px;
+    border-left: 3px var(--text) solid;
+    /* border-bottom: 3px var(--text) solid; */
+}
+#Portfolio section div h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.experience {
+}
+
+.link-box {
+    margin-top: 20px;
+    border: 2px var(--text) solid;
+    padding: 8px;
+    margin-right: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--fontB);
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--text);
+    background-color: var(--bg000);
+    transition: 0.2s ease;
+}
+.link-box:hover {
+    color: var(--text-inverted);
+    background-color: var(--text);
 }
 
 @media screen and (max-width: 990px) {

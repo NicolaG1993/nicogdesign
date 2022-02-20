@@ -11,6 +11,7 @@ module.exports = {
     env: {
         REACT_AWS_KEY: process.env.REACT_AWS_KEY,
         REACT_AWS_SECRET: process.env.REACT_AWS_SECRET,
+        GITHUB_TOKEN: process.env.GITHUB_TOKEN,
     },
 
     webpack(config) {
