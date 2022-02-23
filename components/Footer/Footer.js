@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Footer.module.css";
 import Logo from "../Logo/Logo";
 
@@ -18,8 +19,17 @@ function Copyrights() {
         <div className={styles["copyrights"]}>
             <h5>NGDesign, © {currentYear}</h5>
             <div>
-                <h5>Contact</h5>
-                <h5>Info</h5>
+                <Link href={`/contact`}>
+                    <a>
+                        <h5>Contact</h5>
+                    </a>
+                </Link>
+
+                <Link href={`/about`}>
+                    <a>
+                        <h5>Info</h5>
+                    </a>
+                </Link>
             </div>
         </div>
     );

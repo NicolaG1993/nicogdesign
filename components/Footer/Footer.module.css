@@ -15,8 +15,11 @@
     justify-content: space-between;
 }
 
-.copyrights div h5 {
+.copyrights div a {
     margin-left: 15px;
+}
+.copyrights div a:hover {
+    color: var(--text-hover);
 }
 
 .copyrights h5 {

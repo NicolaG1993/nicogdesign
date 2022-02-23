@@ -77,18 +77,21 @@
 #Nav span:hover {
     color: var(--text-hover);
 }
-#Nav > div:nth-child(1),
-#Nav > div:nth-child(3) {
+#Nav > div:nth-child(1) {
     padding: 10px 20px;
 }
-#Nav > div:nth-child(1) > span,
-#Nav > div:nth-child(3) > h2 {
+#Nav > div:nth-child(1) > span {
     line-height: 40px;
 }
 
-#Nav > div:nth-child(3) {
+.color-mode-wrap {
+    padding: 10px 20px;
     margin-top: auto;
     border-top: 3px var(--text) solid;
+}
+.color-mode-wrap > span,
+.color-mode-wrap > p {
+    line-height: 23px;
 }
 
 .nav-box {

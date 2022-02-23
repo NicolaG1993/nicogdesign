@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import TypeWriter from "../components/Home2/TypeWriter";
 import styles from "../shared/styles/Home2.module.css";
@@ -88,9 +89,9 @@ export default function Home() {
 
             <section className={styles["section-intro"]}>
                 <p>
-                    NGD was founded on a belief in the power of
-                    &apos;live&apos;. We connect, inspire and create massive
-                    impact through music, culture and space.
+                    NGD was created on a belief in the power of
+                    &apos;ideas&apos; and the fact that they create a huge
+                    impact through their development.
                 </p>
             </section>
 
@@ -101,27 +102,53 @@ export default function Home() {
 
                 <div>
                     <p>
-                        Design é ... . Ho iniziato il mio percorso nel 2014,
-                        trasferendomi a Berlino dall&apos;Italia per studiare
-                        design e illustrazione, laureandomi con successo nel
-                        2018 a AID Berlin. Fin da subito mi é interessato il
-                        Webdesign e lo sviluppo di interfaccie, siti web e
-                        applicazioni, mostrando buoni risultati e maturando
-                        esperienza lavorando fino ad oggi su diversi progetti
-                        sia da freelancer che per aziende.
+                        Design is about creating solutions for people. I started
+                        my career in 2014, moving to Berlin from Italy to study
+                        design and illustration, successfully graduating in 2018
+                        at AID Berlin. Right from the start I was interested in
+                        Webdesign and the development of interfaces, websites
+                        and applications, showing good results and gaining
+                        experience working to date on various projects both as a
+                        freelancer and for companies.
                     </p>
                 </div>
 
                 <div id="HeadlineChange">
                     <p>
-                        Webdevelopment é una skill fondamentale ai nostri tempi.
-                        Nel mio caso é stato naturale iniziare ad interessarmi
-                        alla programmazione in parallelo ai miei studi e dopo
-                        aver lavorato come webdesigner. Dopo diversi anni
-                        passati ad imparare HTML, CSS e Javascript ho deciso di
-                        iscrivermi a SPICED ACADEMY per diventare un
-                        programmatore full-stack nel 2021.
+                        Webdevelopment is a fundamental skill these days. In my
+                        case it was natural to get interested in programming in
+                        parallel with my studies and after having worked as a
+                        webdesigner. After several years of learning HTML, CSS
+                        and Javascript I decided to join SPICED ACADEMY to
+                        become a full-stack developer in 2021.
                     </p>
+                </div>
+            </section>
+
+            <section className={styles["section-me"]}>
+                <div></div>
+                <div>
+                    <Link href={`/about`}>
+                        <a>
+                            <button className={styles["link-box"]}>
+                                Learn more about me
+                            </button>
+                        </a>
+                    </Link>
+                    <Link href={`/portfolio`}>
+                        <a>
+                            <button className={styles["link-box"]}>
+                                Watch my portfolio
+                            </button>
+                        </a>
+                    </Link>
+                    <Link href={`/portfolio`}>
+                        <a>
+                            <button className={styles["link-box"]}>
+                                Watch my CV
+                            </button>
+                        </a>
+                    </Link>
                 </div>
             </section>
 
@@ -133,35 +160,49 @@ export default function Home() {
 
                 <h3>GitHub</h3>
                 {gitHubData && (
-                    <div className={styles["data-displayer"]}>
-                        <div>
-                            <p className={styles["data-value"]}>
-                                {gitHubData.repositories.totalCount}
-                            </p>
-                            <h4>Projects</h4>
+                    <>
+                        <div className={styles["data-displayer"]}>
+                            <div>
+                                <p className={styles["data-value"]}>
+                                    {gitHubData.repositories.totalCount}
+                                </p>
+                                <h4>Projects</h4>
+                            </div>
+                            <div>
+                                <p className={styles["data-value"]}>
+                                    {
+                                        gitHubData.contributionsCollection
+                                            .contributionCalendar
+                                            .totalContributions
+                                    }
+                                </p>
+                                <h4>Deploys</h4>
+                                <p>last 12 months</p>
+                            </div>
+                            <div>
+                                <p className={styles["data-value"]}>
+                                    {
+                                        gitHubData.contributionsCollection
+                                            .totalPullRequestContributions
+                                    }
+                                </p>
+                                <h4>Contributions</h4>
+                                <p>last 12 months</p>
+                            </div>
                         </div>
-                        <div>
-                            <p className={styles["data-value"]}>
-                                {
-                                    gitHubData.contributionsCollection
-                                        .contributionCalendar.totalContributions
-                                }
-                            </p>
-                            <h4>Deploys</h4>
-                            <p>last 12 months</p>
-                        </div>
-                        <div>
-                            <p className={styles["data-value"]}>
-                                {
-                                    gitHubData.contributionsCollection
-                                        .totalPullRequestContributions
-                                }
-                            </p>
-                            <h4>Contributions</h4>
-                            <p>last 12 months</p>
-                        </div>
-                    </div>
+
+                        <a
+                            href="https://github.com/NicolaG1993"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className={styles["link-box"]}>
+                                My GitHub Profile
+                            </button>
+                        </a>
+                    </>
                 )}
+
                 {/* <div>
                             <a href="https://stackoverflow.com/users/16337778/nicola-gaioni">
                                 <img
@@ -217,6 +258,16 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
+
+                        <a
+                            href="https://stackoverflow.com/users/16337778/nicola-gaioni"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className={styles["link-box"]}>
+                                My StackOverflow Profile
+                            </button>
+                        </a>
                     </>
                 )}
             </section>
