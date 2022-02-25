@@ -93,7 +93,11 @@ export default function Portfolio() {
                         bootcamp <br />- Supported fellow students with issues
                     </p>
                     <p>
-                        Full-Stack Development, HTML, CSS, JS, Node, Express, ..
+                        Full-Stack Development, HTML, CSS, JavaScript, React.js
+                        (with Hooks and Redux), Vue.js, SQL (Postgress),
+                        Node.js, Express, jQuery, Handlebars, Webpack, npm, Git,
+                        GitHub, Command-Line, VS Code, Heroku, Security: CSRF,
+                        Clickjacking, API&apos;s
                     </p>
                 </div>
 
@@ -107,8 +111,10 @@ export default function Portfolio() {
                         Successfully accomplished 8-semester Studium Ausbildung
                     </p>
                     <p>
-                        Graphic Design, Adobe (Photoshop, Illustrator,
-                        InDesign), ..
+                        Graphic Design, Adobe (Photoshop, Illustrator, InDesign,
+                        AfterEffect), Illustration, Photograpy, Branding,
+                        Package Design, 3D Modeling (Maxon Cinema 4D),
+                        Publishing Design, UX/UI, Printing Techniques, Animation
                     </p>
                 </div>
             </section>

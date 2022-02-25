@@ -1,6 +1,10 @@
+## BUGS
+
 il testo in "Who i am" é pieno di errori e non controllato, anche i tempi verbali probabilmente.
 Si potrebbero inserire dei contatori su Home da GitHub (deploys, repos, collab, active websites)
 toggle color mode
+
+## IDEE
 
 HOME PAGE
 • banner ?
@@ -53,9 +57,45 @@ Vedi il mio CV completo
                         commissioned works.
                     </p>
 
+                    ------------------
+
+Mi chiamo Nicola Gaioni e vengo da un paesino nella provincia di Verona, in Italia. Mi sono trasferito a Berlino, Germania nel 2014 per proseguire i miei studi dopo che ho finito le superiori e dopo che ho lavorato e viaggiato per un paio di anni.
+
+Al momento parlo tre lingue: Italiano, Inglese e Tedesco.
+
+Durante le scuole superiori ho scelto prima un indirizzo elettrotecnico per il primo anno, cambiando l'anno successivo con un isitituto turistico, dove ho studiato inglese, tedesco e francese. Si puo dire che i l'elettronica ed i linguaggi mi siano sempre piaciuti fin da adolescente, come se fosse un preludio al mio successivo studio di linguaggi informatici.
+
+Oltre alle lingue dovetti studiare storia dell'arte durante quegli anni, che mi portó ad aver un forte interesse nel mondo del disegno e del design successivamente. Questo interesse é diventato talmente forte da spingermi a venire a Berlino per iniziare i miei studi in accademia per diventare un grafico e illustratore.
+
+Durante i miei studi in accademia lavoravo giá su piccoli progetti, i primi furono principalmente loghi per negozi o siti web per piccole attivitá, che é il motivo per cui ho iniziato a concentrarmi principalmente sul webdesign e branding. Dopo i miei studi fui assunto un due startup per fare frontend developer nella prima, e graphic designer e web designer nella seconda, che mi fece fare l'esperienza lavorativa che mi serviva.
+
+Nel 2020 ho ricevuto una borsa di studio dal governo per potermi specializzare in come sviluppatore fullstack in un corso botcamp che ho intrapreso e completato ad inizio 2021, dopo aver successivamente superato i test di ammissione.
+
+Su di me e la mia storia rimane poco da dire, qualche curiositá:
+• mi considero creativo e cono un positive
+mindset, teamplayer
+• During my free time I like to develop and design apps
+• i like unpopular opinions
+• preferisco i cani ai gatti
+• il mio colore preferito é il nero
+• la musica e il calcio sono le mie piu grandi passioni, ascolto di tutto ma adoro la musica rock, mentre il mio team di calcio preferito é FC Inter
+• adoro la cucina messicana e asiatica
+
 ---
 
-• dynamic routing per projects
-• creare Project page
-• fare file da importare in components per "projects list"
-• Project component deve contenere: galleria, titolo, testo, github/socials link se presente, website se presente
+## TODO
+
+• dynamic routing per projects 🐢
+• creare Project page 🐢
+• fare file da importare in components per "projects list" 🐢
+• Project component deve contenere: galleria, titolo, testo, github/socials link se presente, website se presente 🧠
+
+---
+
+• Home responsive 🧨
+• Testi About 🧠
+• Testi Portfolio 🐢
+• CV PDF route
+• Icons links in Project
+• Testi Progetti
+• Immagini Progetti

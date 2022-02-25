@@ -45,6 +45,15 @@
     /* text-align: center; */
 }
 
+.text ul {
+    margin-bottom: var(--size000);
+    list-style: circle;
+}
+.text li {
+    margin-left: var(--size200);
+    line-height: 1.5em;
+}
+
 @media screen and (min-width: 1200px) {
     .headings,
     .text {
