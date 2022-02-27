@@ -200,12 +200,7 @@ export default function About() {
                         <li>I like unpopular opinions</li>
                         <li>My favorite color is black</li>
                         <li>I prefer dogs to cats</li>
-                        <li>
-                            Music and football are my greatest passions, I
-                            listen to everything but I love rock music, while my
-                            favorite football team is FC Inter
-                        </li>
-                        <li>I love Mexican and Asian cuisine</li>
+                        <li>Music and football are my greatest passions</li>
                     </ul>
                 </section>
             )
