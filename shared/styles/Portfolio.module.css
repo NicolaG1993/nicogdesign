@@ -63,7 +63,32 @@
     background-color: var(--text);
 }
 
-@media screen and (max-width: 990px) {
-    #Portfolio {
+@media screen and (max-width: 720px) {
+    #Portfolio h1 {
+        font-size: 100px;
+    }
+    #Portfolio section div {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 590px) {
+    #Portfolio h1 {
+        font-size: 80px;
+    }
+    .links-wrap {
+        padding: 40px;
+    }
+    .link-box {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 470px) {
+    #Portfolio h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #Portfolio h1 {
+        font-size: 48px;
     }
 }

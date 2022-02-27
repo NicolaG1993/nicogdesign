@@ -207,7 +207,7 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            <div>
+            <div className={styles["links-wrap"]}>
                 <Link href={`/projects`}>
                     <a>
                         <button className={styles["link-box"]}>
