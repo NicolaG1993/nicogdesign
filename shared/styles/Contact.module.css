@@ -33,7 +33,18 @@
     margin-bottom: 28px;
 }
 
-@media screen and (max-width: 990px) {
-    #Contact {
+@media screen and (max-width: 440px) {
+    #Contact > section > h1 {
+        font-size: 78px;
+    }
+}
+@media screen and (max-width: 390px) {
+    #Contact > section > h1 {
+        font-size: 62px;
+    }
+}
+@media screen and (max-width: 330px) {
+    #Contact > section > h1 {
+        font-size: 48px;
     }
 }
