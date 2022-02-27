@@ -119,36 +119,38 @@ export default function Home() {
                         case it was natural to get interested in programming in
                         parallel with my studies and after having worked as a
                         webdesigner. After several years of learning HTML, CSS
-                        and Javascript I decided to join SPICED ACADEMY to
+                        and JavaScript I decided to join SPICED ACADEMY to
                         become a full-stack developer in 2021.
                     </p>
                 </div>
             </section>
 
             <section className={styles["section-me"]}>
-                <div></div>
                 <div>
-                    <Link href={`/about`}>
-                        <a>
-                            <button className={styles["link-box"]}>
-                                Learn more about me
-                            </button>
-                        </a>
-                    </Link>
-                    <Link href={`/portfolio`}>
-                        <a>
-                            <button className={styles["link-box"]}>
-                                Watch my portfolio
-                            </button>
-                        </a>
-                    </Link>
-                    <Link href={`/portfolio`}>
-                        <a>
-                            <button className={styles["link-box"]}>
-                                Watch my CV
-                            </button>
-                        </a>
-                    </Link>
+                    <div></div>
+                    <div>
+                        <Link href={`/about`}>
+                            <a>
+                                <button className={styles["link-box"]}>
+                                    Learn more about me
+                                </button>
+                            </a>
+                        </Link>
+                        <Link href={`/portfolio`}>
+                            <a>
+                                <button className={styles["link-box"]}>
+                                    Watch my portfolio
+                                </button>
+                            </a>
+                        </Link>
+                        <Link href={`/portfolio`}>
+                            <a>
+                                <button className={styles["link-box"]}>
+                                    Watch my CV
+                                </button>
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </section>
 

@@ -90,11 +90,17 @@
     color: var(--bg000);
     padding: 240px 40px;
     display: flex;
+    justify-content: center;
+}
+.section-me > div {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+    max-width: 1110px;
 }
-.section-me > div:nth-child(1) {
+.section-me > div > div:nth-child(1) {
     background-color: var(--bg000);
     border-radius: 50%;
     height: 175px;
@@ -105,7 +111,7 @@
     background-position: center;
     filter: grayscale(100%);
 }
-.section-me > div:nth-child(1):hover {
+.section-me > div > div:nth-child(1):hover {
     filter: grayscale(0%);
 }
 /* .section-me > div:nth-child(1)::before {
@@ -118,12 +124,12 @@
     background-size: 85%;
     background-position: center;
 } */
-.section-me > div:nth-child(2) {
+.section-me > div > div:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section-me > div > a:nth-child(2) {
+.section-me > div > div > a:nth-child(2) {
     margin: 20px 0;
 }
 
@@ -173,6 +179,7 @@
 }
 .data-displayer {
     width: 100%;
+    max-width: 1110px;
     display: flex;
     /* flex-direction: row; */
     flex-flow: row wrap;
@@ -263,5 +270,76 @@
     }
     50% {
         border-color: transparent;
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 990px) {
+    .data-displayer {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .data-displayer {
+        flex-direction: column;
+    }
+    .data-displayer > div {
+        margin-bottom: 40px;
+    }
+    .data-value {
+        font-size: 240px;
+    }
+}
+@media screen and (max-width: 540px) {
+    #Home h1 {
+        font-size: 48px;
+    }
+    #Headline h2 {
+        font-size: 90px;
+    }
+    .section-skills p {
+        max-width: 66%;
+    }
+    .data-value {
+        font-size: 140px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .section-me > div {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 440px) {
+    .section-skills p {
+        max-width: 100%;
+    }
+    .link-box {
+        width: 100%;
+    }
+    .section-data a {
+        width: 100%;
+    }
+    .section-me > div > div:nth-child(2) {
+        margin-top: 80px;
+        width: 100%;
+    }
+    .section-me > div > div > a {
+        width: 100%;
+    }
+    .section-me > div > div > a:nth-child(2) {
+        margin: 40px 0;
+    }
+    .section-data > div:nth-child(7) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    #Home h1 {
+        font-size: 32px;
+    }
+    #Headline h2 {
+        font-size: 64px;
     }
 }
