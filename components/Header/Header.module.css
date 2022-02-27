@@ -160,3 +160,37 @@
         font-size: 64px;
     }
 }
+
+@media screen and (max-height: 590px) {
+    .nav-box li {
+        font-size: 64px;
+    }
+}
+@media screen and (max-height: 490px) {
+    .nav-box {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .nav-box {
+        margin-bottom: 10px;
+    }
+    .nav-box li {
+        font-size: 58px;
+        line-height: 1.1em;
+    }
+}
+@media screen and (max-height: 390px) {
+    .nav-box {
+        margin-bottom: 5px;
+        padding: 10px 20px;
+    }
+    .nav-box li {
+        font-size: 52px;
+    }
+}
+@media screen and (max-height: 360px) {
+    .nav-box li {
+        font-size: 46px;
+    }
+}

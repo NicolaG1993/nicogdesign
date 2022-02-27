@@ -309,6 +309,16 @@
     .section-me > div {
         flex-direction: column;
     }
+    .section-me > div > div:nth-child(2) {
+        margin-top: 80px;
+        width: 100%;
+    }
+    .section-me > div > div > a {
+        width: 400px;
+    }
+    .section-me > div > div > a:nth-child(2) {
+        margin: 40px 0;
+    }
 }
 @media screen and (max-width: 440px) {
     .section-skills p {
@@ -317,18 +327,13 @@
     .link-box {
         width: 100%;
     }
-    .section-data a {
-        width: 100%;
-    }
-    .section-me > div > div:nth-child(2) {
-        margin-top: 80px;
-        width: 100%;
-    }
+
     .section-me > div > div > a {
         width: 100%;
     }
-    .section-me > div > div > a:nth-child(2) {
-        margin: 40px 0;
+
+    .section-data a {
+        width: 100%;
     }
     .section-data > div:nth-child(7) {
         flex-direction: column;
