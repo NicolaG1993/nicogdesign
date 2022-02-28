@@ -115,7 +115,7 @@ export default function Home() {
 
                 <div id="HeadlineChange">
                     <p>
-                        Webdevelopment is a fundamental skill these days. In my
+                        Web development is a fundamental skill these days. In my
                         case it was natural to get interested in programming in
                         parallel with my studies and after having worked as a
                         webdesigner. After several years of learning HTML, CSS
@@ -143,13 +143,17 @@ export default function Home() {
                                 </button>
                             </a>
                         </Link>
-                        <Link href={`/portfolio`}>
-                            <a>
-                                <button className={styles["link-box"]}>
-                                    Watch my CV
-                                </button>
-                            </a>
-                        </Link>
+
+                        <a
+                            href={"/documents/CV.pdf"}
+                            alt="alt text"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className={styles["link-box"]}>
+                                Watch my CV
+                            </button>
+                        </a>
                     </div>
                 </div>
             </section>

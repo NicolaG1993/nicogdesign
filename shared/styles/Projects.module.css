@@ -22,7 +22,7 @@
     line-height: 1em;
     padding-bottom: 10px;
     font-weight: 900;
-    font-size: 84px;
+    font-size: 90px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     cursor: pointer;
@@ -110,7 +110,69 @@
     position: relative;
 }
 
-@media screen and (max-width: 990px) {
-    #Projects {
+@media screen and (min-width: 1200px) {
+    /* .headings h1 {
+        font-size: 90px;
+    } */
+}
+@media screen and (max-width: 950px) {
+    .headings h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .headings h1 {
+        font-size: 72px;
+        line-height: 1.2em;
+    }
+}
+/* @media screen and (max-width: 830px) {
+    .headings h1 {
+        font-size: 64px;
+    }
+} */
+@media screen and (max-width: 730px) {
+    .headings h1 {
+        font-size: 52px;
+        line-height: 2em;
+    }
+    .project-box > div:nth-child(1) {
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 610px) {
+    .headings h1 {
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .headings h1 {
+        font-size: 32px;
+        line-height: 2.5em;
+    }
+    .project-box {
+        flex-direction: column-reverse;
+    }
+    .project-box > div:nth-child(1) {
+        padding-right: 0px;
+    }
+    .picture-box {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 410px) {
+    .headings h1 {
+        font-size: 24px;
+        line-height: 3.5em;
+    }
+    .project-box > div:nth-child(1) {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 305px) {
+    .headings h1 {
+        font-size: 18px;
+        line-height: 4.5em;
     }
 }

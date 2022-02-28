@@ -215,20 +215,17 @@ export default function Portfolio() {
                         </button>
                     </a>
                 </Link>
-                <Link href={`/cv`}>
-                    <a>
-                        <button className={styles["link-box"]}>
-                            Watch my CV
-                        </button>
-                    </a>
-                </Link>
-                <Link href={`/cv`}>
-                    <a>
-                        <button className={styles["link-box"]}>
-                            Download my CV (PDF)
-                        </button>
-                    </a>
-                </Link>
+
+                <a
+                    href={"/documents/CV.pdf"}
+                    alt="alt text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button className={styles["link-box"]}>
+                        Download my CV (PDF)
+                    </button>
+                </a>
             </div>
 
             {/* <section className={styles.smth2}>
