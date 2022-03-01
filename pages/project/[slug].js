@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../../shared/styles/Project.module.css";
 import projectLists from "../../shared/data/allProjects.js";
+import GitHub from "../../components/Project/assets/github.svg";
+import Dribbble from "../../components/Project/assets/dribbble.svg";
 
 export default function Project({ project }) {
     return (
@@ -27,20 +29,47 @@ export default function Project({ project }) {
                 )}
             </h4>
 
-            {/* QUI VA ICONS COMPONENT 🧠 */}
-            <div className={styles["links-box"]}>
-                {project.urls && (
-                    <a
-                        href={project.urls.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <button className={styles["link-box"]}>
-                            Go to the project
-                        </button>
-                    </a>
-                )}
-            </div>
+            {project.urls && (
+                <div className={styles["links-bar"]}>
+                    <div className={styles["icons-box"]}>
+                        {project.urls.github && (
+                            <a
+                                className={styles["icon"]}
+                                href={project.urls.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <GitHub />
+                            </a>
+                        )}
+                        {project.urls.dribbble && (
+                            <a
+                                className={styles["icon"]}
+                                href={project.urls.dribbble}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Dribbble />
+                            </a>
+                        )}
+                        {/* QUI VANNO NUOVI ICONS COMPONENT */}
+                    </div>
+
+                    <div className={styles["link-box-wrap"]}>
+                        {project.urls && (
+                            <a
+                                href={project.urls.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className={styles["link-box"]}>
+                                    Go to the project
+                                </button>
+                            </a>
+                        )}
+                    </div>
+                </div>
+            )}
 
             <p>{project.full_description}</p>
 

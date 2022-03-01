@@ -18,13 +18,13 @@
     /* margin: 40px 0; */
     border-top: 3px var(--text) solid;
     width: 100%;
-    padding: 80px 40px;
+    padding: 160px 40px 80px 40px;
 }
 #Portfolio section h2 {
     font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     text-align: center;
 }
 #Portfolio section div {

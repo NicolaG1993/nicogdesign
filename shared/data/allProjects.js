@@ -8,10 +8,10 @@ const projectLists = {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             full_description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            thumbnail: "/project-pics/ngd-thumb.jpg",
+            thumbnail: "/project-pics/ngd/ngd-thumb.jpg",
             pics: [
-                "/project-pics/ngd-thumb.jpg",
-                "/project-pics/ngd-thumb.jpg",
+                "/project-pics/ngd/ngd-thumb.jpg",
+                "/project-pics/ngd/ngd-thumb.jpg",
             ],
             urls: null,
         },
@@ -70,14 +70,17 @@ const projectLists = {
                 "Brand ID",
             ],
             description:
-                "Lorem ipsum dolor sit amet, description is coming soon...",
+                "E-commerce website for a small business in Italy, user can buy items, shop filters, cart, different payment methods and checkout options. (Next.js, Redux, Node.js, AWS).",
             full_description:
-                "Lorem ipsum dolor sit amet, description is coming soon...",
-            thumbnail: null,
-            pics: null,
+                "E-commerce website for a small business in Italy, user can buy items, shop filters, cart, different payment methods and checkout options. (Next.js, Redux, Node.js, AWS).",
+            thumbnail: "/project-pics/damamyamamy/Logo.jpg",
+            pics: [
+                "/project-pics/damamyamamy/Logo.jpg",
+                "/project-pics/damamyamamy/Logo.jpg",
+            ],
             urls: {
                 website: "https://www.damamyamamy.com/",
-                github: "https://www.github.com/",
+                github: "https://github.com/NicolaG1993/damamyamamy",
             },
         },
         {

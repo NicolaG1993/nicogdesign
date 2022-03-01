@@ -33,7 +33,7 @@ function Header({ close, toggle }) {
                     </a>
                     <a
                         className={styles["header-icon"]}
-                        href="https://www.facebook.com/Da-Mamy-A-Mamy-105663897718034/"
+                        href="https://wa.me/393491769523?text=Hi!%20I'm%20interested%20in%20your%20works,%20..."
                         target="_blank"
                         rel="noopener noreferrer"
                     >

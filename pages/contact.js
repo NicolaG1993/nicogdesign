@@ -26,6 +26,16 @@ export default function Contact() {
                         Phone:{" "}
                         <a href="tel:+4915737270232">+49 (0) 157 37270232</a>
                     </h4>
+                    <h4>
+                        WhatsApp:{" "}
+                        <a
+                            href="https://wa.me/393491769523?text=Hi!%20I'm%20interested%20in%20your%20works,%20..."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            +39 349 176 9523
+                        </a>
+                    </h4>
                     <h4>Current location: Berlin, Germany</h4>
                 </div>
             </section>
