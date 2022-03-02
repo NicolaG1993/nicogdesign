@@ -5,27 +5,36 @@ const projectLists = {
             slug: "ngd",
             tags: ["Brand ID", "Graphic Design"],
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development.",
             full_description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development.",
             thumbnail: "/project-pics/ngd/ngd-thumb.jpg",
-            pics: [
-                "/project-pics/ngd/ngd-thumb.jpg",
-                "/project-pics/ngd/ngd-thumb.jpg",
-            ],
+            pics: ["/project-pics/ngd/ngd-thumb.jpg"],
             urls: null,
         },
         {
-            title: "Logo Design and Animations",
+            title: "Logo Design and Animation",
             slug: "logo",
             tags: ["Brand ID", "Logo Design", "Animations"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
             full_description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
-            thumbnail: null,
-            pics: null,
-            urls: null,
+            thumbnail: "/project-pics/ngdlogo/logo-black.jpg",
+            pics: [
+                "/project-pics/ngdlogo/logo-black.jpg",
+                "/project-pics/ngdlogo/logo-white.jpg",
+                "/project-pics/ngdlogo/logo-black2.png",
+                "/project-pics/ngdlogo/logo-white2.png",
+            ],
+            urls: {
+                clips: [
+                    "https://www.artstation.com/artwork/8elERR",
+                    "https://www.artstation.com/artwork/0nXOoG",
+                    "https://www.artstation.com/artwork/Krady9",
+                    "https://www.artstation.com/artwork/3doQLo",
+                ],
+            },
         },
         {
             title: "In Circle Records",
@@ -35,8 +44,28 @@ const projectLists = {
                 "Lorem ipsum dolor sit amet, description is coming soon...",
             full_description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
-            thumbnail: null,
-            pics: null,
+            thumbnail: "/project-pics/incirclerecords/mock.png",
+            pics: [
+                "/project-pics/incirclerecords/mock.png",
+                "/project-pics/incirclerecords/mobile.png",
+                "/project-pics/incirclerecords/tablet.png",
+            ],
+            urls: null,
+        },
+        {
+            title: "NGD 2019/2020",
+            slug: "ngd2019",
+            tags: ["Brand ID", "Logo Design", "Web Design"],
+            description:
+                "Lorem ipsum dolor sit amet, description is coming soon...",
+            full_description:
+                "Lorem ipsum dolor sit amet, description is coming soon...",
+            thumbnail: "/project-pics/ngd2019/mock.png",
+            pics: [
+                "/project-pics/ngd2019/mock.png",
+                "/project-pics/ngd2019/mock2.png",
+                "/project-pics/ngd2019/banner.jpg",
+            ],
             urls: null,
         },
         {
@@ -53,8 +82,20 @@ const projectLists = {
                 "Lorem ipsum dolor sit amet, description is coming soon...",
             full_description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
-            thumbnail: null,
-            pics: null,
+            thumbnail: "/project-pics/zero/thumb.jpg",
+            pics: [
+                "/project-pics/zero/ZERO-mock4.jpg",
+                "/project-pics/zero/ZERO-mock2.jpg",
+                "/project-pics/zero/ZERO-mock1.jpg",
+                "/project-pics/zero/ZERO-mock3.jpg",
+                "/project-pics/zero/ZERO-poster1.jpg",
+                "/project-pics/zero/ZERO-poster2.jpg",
+                "/project-pics/zero/ZERO-illustration1.jpg",
+                "/project-pics/zero/ZERO-illustration2.jpg",
+                "/project-pics/zero/ZERO-illustration3.jpg",
+                "/project-pics/zero/ZERO-illustration4.jpg",
+                "/project-pics/zero/ZERO-illustration5.jpg",
+            ],
             urls: null,
         },
     ],
@@ -75,7 +116,11 @@ const projectLists = {
                 "E-commerce website for a small business in Italy, user can buy items, shop filters, cart, different payment methods and checkout options. (Next.js, Redux, Node.js, AWS).",
             thumbnail: "/project-pics/damamyamamy/Logo.jpg",
             pics: [
-                "/project-pics/damamyamamy/Logo.jpg",
+                "/project-pics/damamyamamy/screen1.png",
+                "/project-pics/damamyamamy/screen2.png",
+                "/project-pics/damamyamamy/screen3.png",
+                "/project-pics/damamyamamy/screen4.png",
+                "/project-pics/damamyamamy/screen5.png",
                 "/project-pics/damamyamamy/Logo.jpg",
             ],
             urls: {

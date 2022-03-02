@@ -4,6 +4,7 @@ import styles from "../../shared/styles/Project.module.css";
 import projectLists from "../../shared/data/allProjects.js";
 import GitHub from "../../components/Project/assets/github.svg";
 import Dribbble from "../../components/Project/assets/dribbble.svg";
+import Video from "../../components/Project/assets/video.svg";
 
 export default function Project({ project }) {
     return (
@@ -52,11 +53,23 @@ export default function Project({ project }) {
                                 <Dribbble />
                             </a>
                         )}
+                        {project.urls.clips &&
+                            project.urls.clips.map((el) => (
+                                <a
+                                    className={styles["icon"]}
+                                    href={el}
+                                    key={el}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Video />
+                                </a>
+                            ))}
                         {/* QUI VANNO NUOVI ICONS COMPONENT */}
                     </div>
 
                     <div className={styles["link-box-wrap"]}>
-                        {project.urls && (
+                        {project.urls.website && (
                             <a
                                 href={project.urls.website}
                                 target="_blank"
@@ -83,7 +96,7 @@ export default function Project({ project }) {
                             layout="responsive"
                             width="100%"
                             height="100%"
-                            objectFit="cover"
+                            objectFit="contain"
                         />
                     </div>
                 ))}

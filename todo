@@ -88,7 +88,7 @@ mindset, teamplayer
 • dynamic routing per projects 🐢
 • creare Project page 🐢
 • fare file da importare in components per "projects list" 🐢
-• Project component deve contenere: galleria, titolo, testo, github/socials link se presente, website se presente 🧠
+• Project component deve contenere: galleria, titolo, testo, github/socials link se presente, website se presente 🐢
 
 ---
 
@@ -98,9 +98,12 @@ mindset, teamplayer
 • About responsive 🐢
 • Portfolio responsive 🐢
 • Contact responsive 🐢
-• Projects+Project responsive 🧠
+• Projects+Project responsive 🐢
 
 • CV PDF route 🐢
-• Icons links in Project 🧨
+• Icons links in Project 🐢
 • Testi Progetti (anche bozze in italiano per ora, o lorem ipsum)
-• Immagini Progetti
+• Immagini Progetti 🧨
+
+• fix github key in production 🧨
+• spostare da AWS a vercel?
