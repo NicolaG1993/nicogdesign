@@ -63,7 +63,7 @@ export default function Projects() {
                                     <p>{el.description}</p>
 
                                     <div className={styles["links-box"]}>
-                                        <Link href={`/project/${el.slug}`}>
+                                        <Link href={`${el.slug}`}>
                                             <a>
                                                 <button
                                                     className={

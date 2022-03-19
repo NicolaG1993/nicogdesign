@@ -180,7 +180,7 @@ main {
     /* background: rgb(135, 10, 236); */
     /* background: rgb(101, 15, 172); */
     /* background: var(--color000); */
-    color: var(--text-inverted);
+    color: var(--black);
     padding: var(--size-300);
 }
 

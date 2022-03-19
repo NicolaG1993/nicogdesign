@@ -2,7 +2,7 @@ const projectLists = {
     design: [
         {
             title: "NGD",
-            slug: "ngd",
+            slug: "/project/ngd",
             tags: ["Brand ID", "Graphic Design"],
             description:
                 "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development.",
@@ -14,7 +14,7 @@ const projectLists = {
         },
         {
             title: "Logo Design and Animation",
-            slug: "logo",
+            slug: "/project/logo",
             tags: ["Brand ID", "Logo Design", "Animations"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
@@ -38,7 +38,7 @@ const projectLists = {
         },
         {
             title: "In Circle Records",
-            slug: "in-circle-records",
+            slug: "/project/in-circle-records",
             tags: ["Brand ID", "Logo Design", "Web Design"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
@@ -54,7 +54,7 @@ const projectLists = {
         },
         {
             title: "NGD 2019/2020",
-            slug: "ngd2019",
+            slug: "/project/ngd2019",
             tags: ["Brand ID", "Logo Design", "Web Design"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
@@ -70,7 +70,7 @@ const projectLists = {
         },
         {
             title: "ZERO",
-            slug: "zero",
+            slug: "/project/zero",
             tags: [
                 "Brand ID",
                 "Logo Design",
@@ -102,7 +102,7 @@ const projectLists = {
     coding: [
         {
             title: "da Mamy a Mamy",
-            slug: "da-mamy-a-mamy",
+            slug: "/project/da-mamy-a-mamy",
             tags: [
                 "E-Commerce",
                 "NextJS",
@@ -130,7 +130,7 @@ const projectLists = {
         },
         {
             title: "Bordogna Silvano Snc",
-            slug: "bordogna-silvano-snc",
+            slug: "/project/bordogna-silvano-snc",
             tags: ["NextJS", "Website", "Brand ID"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
@@ -146,7 +146,7 @@ const projectLists = {
         },
         {
             title: "Music News API",
-            slug: "music-news-api",
+            slug: "/project/music-news-api",
             tags: ["API"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
@@ -158,7 +158,7 @@ const projectLists = {
         },
         {
             title: "Spiced Academy - Final Project",
-            slug: "spiced-final-project",
+            slug: "/project/spiced-final-project",
             tags: ["React", "Website", "Social Network", "Bootcamp Project"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
@@ -170,8 +170,20 @@ const projectLists = {
         },
         {
             title: "Spiced Academy - Image Board",
-            slug: "spiced-image-board",
+            slug: "/project/spiced-image-board",
             tags: ["Bootcamp Project"],
+            description:
+                "Lorem ipsum dolor sit amet, description is coming soon...",
+            full_description:
+                "Lorem ipsum dolor sit amet, description is coming soon...",
+            thumbnail: null,
+            pics: null,
+            urls: null,
+        },
+        {
+            title: "Random Numbers Generator",
+            slug: "/element/random-numbers-generator",
+            tags: ["Component", "Element"],
             description:
                 "Lorem ipsum dolor sit amet, description is coming soon...",
             full_description:

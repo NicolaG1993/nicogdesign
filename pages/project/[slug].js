@@ -84,7 +84,7 @@ export default function Project({ project }) {
                 </div>
             )}
 
-            <p>{project.full_description}</p>
+            <p className={styles["description"]}>{project.full_description}</p>
 
             {project.pics &&
                 project.pics.map((el, i) => (
@@ -107,13 +107,8 @@ export default function Project({ project }) {
 export async function getServerSideProps(context) {
     const { params } = context;
     const { slug } = params;
-
     let allProjects = [...projectLists.design, ...projectLists.coding]; //merge all projects arrays
-    let project = allProjects.filter((el) => el.slug === slug);
-
-    console.log("slug:", slug);
-    console.log("project:", project);
-
+    let project = allProjects.filter((el) => el.slug === `/project/${slug}`);
     return {
         props: { project: project[0] },
     };
