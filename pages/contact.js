@@ -53,6 +53,15 @@ export default function Contact() {
                 </h4>
                 <h4>
                     <a
+                        href="https://www.linkedin.com/in/nicola-gaioni/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </h4>
+                <h4>
+                    <a
                         href="https://stackoverflow.com/users/16337778/nicola-gaioni"
                         target="_blank"
                         rel="noopener noreferrer"

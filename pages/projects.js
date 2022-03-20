@@ -1,12 +1,24 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../shared/styles/Projects.module.css";
 import projectLists from "../shared/data/allProjects.js";
 
 export default function Projects() {
     const [selection, setSelection] = useState("design");
+
+    useEffect(
+        () =>
+            window.sessionStorage.getItem("ngd-projects") &&
+            setSelection(sessionStorage.getItem("ngd-projects")),
+        []
+    );
+
+    const handleChange = (str) => {
+        setSelection(str);
+        sessionStorage.setItem("ngd-projects", str);
+    };
 
     return (
         <div id={styles["Projects"]}>
@@ -21,7 +33,7 @@ export default function Projects() {
 
             <section className={styles["headings"]}>
                 <h1
-                    onClick={() => setSelection("design")}
+                    onClick={() => handleChange("design")}
                     className={
                         selection === "design"
                             ? styles["selected"]
@@ -31,7 +43,7 @@ export default function Projects() {
                     DESIGN
                 </h1>
                 <h1
-                    onClick={() => setSelection("coding")}
+                    onClick={() => handleChange("coding")}
                     className={
                         selection === "coding"
                             ? styles["selected"]
