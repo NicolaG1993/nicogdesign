@@ -14,7 +14,7 @@ function Header({ close, toggle }) {
                     </a>
                 </Link>
 
-                <div>
+                <div className={styles["header-box"]}>
                     <a
                         className={styles["header-icon"]}
                         href="https://www.facebook.com/nicog.designer"

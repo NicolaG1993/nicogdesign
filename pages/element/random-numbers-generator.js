@@ -28,6 +28,11 @@ export default function Element({ project }) {
         sessionStorage.setItem("ngd-rng-notes", e.target.value);
     };
 
+    const clearResults = () => {
+        setResult([]);
+        setLastResults([]);
+    };
+
     const handleChange = (e) => {
         e.preventDefault();
         const formObj = new FormData(e.target.form);
@@ -217,28 +222,36 @@ export default function Element({ project }) {
                 </div>
 
                 <div className={styles["form-results"]}>
-                    <div className={styles[""]}>
+                    <div className={styles["results-box"]}>
                         <h3>Your random numbers</h3>
-                        <p className={styles[""]}>
-                            {result.map((el) => `${el} `)}
-                        </p>
+                        <p>{result.map((el) => `${el} `)}</p>
                     </div>
 
-                    <div className={styles[""]}>
+                    <div className={styles["results-box"]}>
                         <h3>Last numbers</h3>
-                        <div className={styles[""]}>
+                        <div>
                             {lastResults
                                 .slice(0)
                                 .reverse()
                                 .map(
                                     (el, i) =>
                                         i < 10 && (
-                                            <p key={i} className={styles[""]}>
+                                            <p key={i}>
                                                 {el.map((n) => `${n} `)}
                                             </p>
                                         )
                                 )}
                         </div>
+                    </div>
+
+                    <div>
+                        <button
+                            onClick={clearResults}
+                            className={styles["submit-box"]}
+                            type="button"
+                        >
+                            Clear Results
+                        </button>
                     </div>
                 </div>
 
