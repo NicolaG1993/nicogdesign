@@ -8,10 +8,12 @@ function Header({ close, toggle }) {
     return (
         <header id={styles["Header"]}>
             <div className={styles["header-box"]}>
-                <Link href="/">
-                    <a className={styles["header-logo"]} onClick={close}>
-                        NGD
-                    </a>
+                <Link
+                    href="/"
+                    className={styles["header-logo"]}
+                    onClick={close}
+                >
+                    NGD
                 </Link>
 
                 <div className={styles["header-box"]}>

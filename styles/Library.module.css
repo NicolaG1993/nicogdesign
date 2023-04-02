@@ -1,0 +1,64 @@
+#Library {
+    padding: 63px 0px 0px 0px;
+    height: calc(100vh - 46px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Library > section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+/*SIDE NAV*/
+.side-nav {
+    width: 300px;
+    overflow-y: auto;
+}
+.side-nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    outline: 1px solid var(--text);
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: var(--bg000);
+}
+.side-nav > div:hover {
+    background-color: var(--bg200);
+}
+.side-nav .selected {
+    background-color: var(--bg200);
+}
+
+/*RENDER AREA*/
+.render-area {
+    width: 100%;
+    outline: 1px solid var(--text);
+
+    background-color: var(--bg000);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.render-area > div:nth-child(1) {
+}
+.render-area h1 {
+    /* text-align: center; */
+    font-weight: 900;
+    line-height: 1em;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 50px 0 10px 0;
+}

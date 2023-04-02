@@ -19,16 +19,12 @@ function Copyrights() {
         <div className={styles["copyrights"]}>
             <h5>NGDesign, © {currentYear}</h5>
             <div>
-                <Link href={`/contact`}>
-                    <a>
-                        <h5>Contact</h5>
-                    </a>
+                <Link passHref href={`/contact`}>
+                    <h5>Contact</h5>
                 </Link>
 
-                <Link href={`/about`}>
-                    <a>
-                        <h5>Info</h5>
-                    </a>
+                <Link passHref href={`/about`}>
+                    <h5>Info</h5>
                 </Link>
             </div>
         </div>

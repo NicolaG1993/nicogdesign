@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import styles from "../../shared/styles/Home2.module.css";
+import styles from "@/styles/Home.module.css";
 
 export default function TypeWriter() {
     const aText = new Array(
         `Hi,`,
         ` I'm Nick. `,
-        `Webdeveloper. `,
+        `Web Developer. `,
         `Graphic Designer.`
     );
     const iSpeed = 100; // time delay of print out

@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
-@import url(https://fonts.googleapis.com/css?family=Mandali);
-@import url(https://fonts.googleapis.com/css?family=Mallanna);
-@import url(https://fonts.googleapis.com/css?family=Prata);
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900);
+/* @import url(https://fonts.googleapis.com/css?family=Mandali); */
+/* @import url(https://fonts.googleapis.com/css?family=Mallanna); */
+/* @import url(https://fonts.googleapis.com/css?family=Prata); */
+/* @import url(https://fonts.googleapis.com/css?family=Oswald); */
 
 *,
 *::before,
@@ -36,7 +36,7 @@
     --text-color: rgb(0, 140, 255);
 
     --selection: rgba(142, 202, 230, 0.75);
-    --logo: url(../../components/Logo/assets/logo-black.png);
+    --logo: url(../components/Logo/assets/logo-black.png);
 }
 .theme-dark {
     --text: ghostwhite;
@@ -47,7 +47,8 @@
     --bg000: rgb(11, 11, 12);
 
     --bg100: rgb(10, 17, 40);
-    --bg200: #0d1117;
+    --bg200: #202630;
+    /* --bg200: #0d1117; */
     --bg300: rgb(4, 4, 15);
     --bg400: rgb(18, 130, 162);
     --bg500: rgb(4, 4, 15);
@@ -61,13 +62,13 @@
     --text-color: rgb(0, 140, 255);
 
     --selection: rgba(142, 202, 230, 0.75);
-    --logo: url(../../components/Logo/assets/logo-white.png);
+    --logo: url(../components/Logo/assets/logo-white.png);
 } /*eliminare logo quando si fa svg*/
 
 html {
     font-size: 16px;
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    overflow-y: auto;
     font-family: var(--fontA);
     color: var(--text);
     background: var(--bg000);
@@ -132,9 +133,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-/* a:hover {
-    color: var(--color000);
-} */
+a:hover {
+    color: var(--text-hover);
+}
 ul {
     list-style-type: none;
     padding: 0;

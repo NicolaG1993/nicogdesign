@@ -1,14 +1,14 @@
-import Layout from "../constants/layout";
-import "../shared/styles/globals.css";
+import Layout from "@/constants/layout";
+import "@/styles/globals.css";
 
 // REDUX
-import withRedux from "next-redux-wrapper";
+// import withRedux from "next-redux-wrapper";
+// import { createStore } from "redux";
+// import { createWrapper } from "next-redux-wrapper";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
-import store from "../redux/store";
-import { createWrapper } from "next-redux-wrapper";
+import store from "@/redux/store";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
     const underDevelopment = false;
 
     return (
@@ -35,7 +35,6 @@ function MyApp({ Component, pageProps }) {
     );
 }
 
-const makeStore = () => store;
-const wrapper = createWrapper(makeStore);
-
-export default wrapper.withRedux(MyApp);
+// const makeStore = () => store;
+// const wrapper = createWrapper(makeStore);
+export default App;

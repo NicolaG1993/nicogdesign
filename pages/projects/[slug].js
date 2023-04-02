@@ -1,20 +1,22 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../../shared/styles/Project.module.css";
-import projectLists from "../../shared/data/allProjects.js";
-import GitHub from "../../components/Project/assets/github.svg";
-import Dribbble from "../../components/Project/assets/dribbble.svg";
-import Video from "../../components/Project/assets/video.svg";
+import styles from "@/styles/Project.module.css";
+import designProjects from "@/shared/data/design.js";
+import codingProjects from "@/shared/data/coding.js";
+import GitHub from "@/components/Project/assets/github.svg";
+import Dribbble from "@/components/Project/assets/dribbble.svg";
+import Video from "@/components/Project/assets/video.svg";
+import Link from "next/link";
 
 export default function Project({ project }) {
     return (
         <div id={styles["Project"]}>
             <Head>
-                <title>{project.title} - NGD | Nicola Gaioni Design</title>
+                <title>{project.title} • NGD | Nicola Gaioni Design</title>
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:title"
-                    content={`${project.title} - NGD | Nicola Gaioni Design`}
+                    content={`${project.title} • NGD | Nicola Gaioni Design`}
                 />
             </Head>
 
@@ -76,15 +78,48 @@ export default function Project({ project }) {
                                 rel="noopener noreferrer"
                             >
                                 <button className={styles["link-box"]}>
-                                    Go to the project
+                                    Visit the website
                                 </button>
                             </a>
+                        )}
+
+                        {project.urls && project.urls.library && (
+                            <Link passHref href={`${project.urls.library}`}>
+                                <button className={styles["link-box"]}>
+                                    Open Library
+                                </button>
+                            </Link>
                         )}
                     </div>
                 </div>
             )}
 
-            <p className={styles["description"]}>{project.full_description}</p>
+            <div className={styles["all-text"]}>
+                {project.stack && (
+                    <div className={styles["stack"]}>
+                        <p>Stack: </p>
+                        <p>
+                            {project.stack.map((str, i) =>
+                                i === project.stack.length - 1
+                                    ? `${str}.`
+                                    : `${str}, `
+                            )}
+                        </p>
+                    </div>
+                )}
+
+                <p className={styles["description"]}>
+                    {project.full_description}
+                </p>
+
+                {project.isCode && (
+                    <p className={styles["maintained"]}>
+                        {project.maintained
+                            ? "This project runs in production mode at the moment and it's constantly maintained and updated. Please report any bug, thanks!"
+                            : "I am not maintaining and updating this code at the moment."}
+                    </p>
+                )}
+            </div>
 
             {project.pics &&
                 project.pics.map((el, i) => (
@@ -93,10 +128,16 @@ export default function Project({ project }) {
                             alt={`${project.title} pic ${i}`}
                             src={el}
                             onClick={undefined}
-                            layout="responsive"
-                            width="100%"
-                            height="100%"
-                            objectFit="contain"
+                            width="0"
+                            height="0"
+                            sizes="100vw"
+                            // fill
+                            style={{
+                                objectFit: "contain",
+                                position: "relative",
+                                width: "100%",
+                                height: "auto",
+                            }}
                         />
                     </div>
                 ))}
@@ -107,8 +148,11 @@ export default function Project({ project }) {
 export async function getServerSideProps(context) {
     const { params } = context;
     const { slug } = params;
-    let allProjects = [...projectLists.design, ...projectLists.coding]; //merge all projects arrays
-    let project = allProjects.filter((el) => el.slug === `/project/${slug}`);
+    let allProjects = [
+        ...designProjects,
+        ...codingProjects.map((el) => ({ ...el, isCode: true })),
+    ]; //merge all projects arrays
+    let project = allProjects.filter((el) => el.slug === `/projects/${slug}`);
     return {
         props: { project: project[0] },
     };

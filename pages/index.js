@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import TypeWriter from "../components/Home2/TypeWriter";
-import styles from "../shared/styles/Home2.module.css";
-import useScrollPosition from "../shared/utils/useScrollPosition";
+import TypeWriter from "@/components/TypeWriter/TypeWriter";
+import styles from "@/styles/Home.module.css";
+import useScrollPosition from "@/shared/utils/useScrollPosition";
 import axios from "axios";
 
 export default function Home() {
@@ -129,19 +129,15 @@ export default function Home() {
                 <div>
                     <div></div>
                     <div>
-                        <Link href={`/about`}>
-                            <a>
-                                <button className={styles["link-box"]}>
-                                    Learn more about me
-                                </button>
-                            </a>
+                        <Link passHref href={`/about`}>
+                            <button className={styles["link-box"]}>
+                                About me
+                            </button>
                         </Link>
-                        <Link href={`/portfolio`}>
-                            <a>
-                                <button className={styles["link-box"]}>
-                                    Watch my portfolio
-                                </button>
-                            </a>
+                        <Link passHref href={`/portfolio`}>
+                            <button className={styles["link-box"]}>
+                                portfolio
+                            </button>
                         </Link>
 
                         <a
@@ -150,9 +146,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <button className={styles["link-box"]}>
-                                Watch my CV
-                            </button>
+                            <button className={styles["link-box"]}>CV</button>
                         </a>
                     </div>
                 </div>

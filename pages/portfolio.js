@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../components/Button/Button";
+import Button from "@/components/Button/Button";
 
-import styles from "../shared/styles/Portfolio.module.css";
+import styles from "@/styles/Portfolio.module.css";
 
 export default function Portfolio() {
     return (
@@ -28,14 +28,57 @@ export default function Portfolio() {
                 <h2>Experience</h2>
 
                 <div>
+                    <h3>NICOLA GAIONI DESIGN</h3>
+                    <p>2021/2023 • Berlin, Germany</p>
+                    <h4>Founder</h4>
+                    <p>Freelance Full-Stack Developer and Graphic Designer</p>
+                </div>
+
+                <div>
+                    <h3>GINGIO</h3>
+                    <p>2014/2023 • Berlin, Germany / Locarno, Switzerland</p>
+                    <h4>
+                        Head of Web Development Department / Global Database
+                        Administrator / Event Coordinator (Germany) / Graphic
+                        Designer
+                    </h4>
+                    <p>Entertainment agency</p>
+                    <div className={styles["list"]}>
+                        <p className={styles["list-el"]}>
+                            Constant management and updating of one of the
+                            largest global databases in the music and
+                            entertainment industry (through spreadsheets)
+                        </p>
+                        <p className={styles["list-el"]}>
+                            Production of graphics and banners
+                        </p>
+                        <p className={styles["list-el"]}>Team coordination</p>
+                        <p className={styles["list-el"]}>
+                            Organization of promotional events in Berlin
+                        </p>
+                    </div>
+
+                    <p>
+                        Database Administration, Microsoft Excel, Graphic
+                        Design, Events Coordination, Adobe (Photoshop,
+                        Illustrator, InDesign)
+                    </p>
+                </div>
+
+                <div>
                     <h3>TIM COMPANY</h3>
                     <p>2019/2020 • Berlin, Germany</p>
                     <h4>Head of Design Department</h4>
-                    <p>
-                        Digital marketing company <br />- Improved the design of
-                        customer websites (WordPress, Elementor, CSS, JS) <br />
-                        - Branding, advertisement and social media campaigns
-                    </p>
+                    <p>Digital marketing company</p>
+                    <div className={styles["list"]}>
+                        <p className={styles["list-el"]}>
+                            Improved the design of customer websites (WordPress,
+                            Elementor, CSS, JS)
+                        </p>
+                        <p className={styles["list-el"]}>
+                            Branding, advertisement and social media campaigns
+                        </p>
+                    </div>
                     <p>
                         Web Design, Web Development (HTML, CSS, JS), SEO,
                         Graphic Design, Advertisement, Social Media Campaigns,
@@ -48,35 +91,20 @@ export default function Portfolio() {
                     <h3>LAUDO AG</h3>
                     <p>2018/2019 • Berlin, Germany</p>
                     <h4>Frontend Developer</h4>
-                    <p>
-                        Web development agency <br />- Developed websites for
-                        clients (WordPress, Beaver Builder) <br />- Improved
-                        websites design, layouts and responsiveness (CSS 3)
-                    </p>
+                    <p>Web development agency</p>
+                    <div className={styles["list"]}>
+                        <p className={styles["list-el"]}>
+                            Developed websites for clients (WordPress, Beaver
+                            Builder)
+                        </p>
+                        <p className={styles["list-el"]}>
+                            Improved websites design, layouts and responsiveness
+                            (CSS 3)
+                        </p>
+                    </div>
                     <p>
                         Web Design, Web Development (HTML, CSS, JS), WordPress,
                         Beaver Builder, SEO
-                    </p>
-                </div>
-
-                <div>
-                    <h3>GINGIO</h3>
-                    <p>2014/2022 • Berlin, Germany / Locarno, Switzerland</p>
-                    <h4>
-                        Global Database Administrator / Event Coordinator
-                        (Germany) / Graphic Designer
-                    </h4>
-                    <p>
-                        Entertainment agency <br />- Constant management and
-                        updating of one of the largest global databases in the
-                        music and entertainment industry (through spreadsheets)
-                        <br />- Organization of promotional events in Berlin
-                        <br />- Production of graphics and banners
-                    </p>
-                    <p>
-                        Database Administration, Microsoft Excel, Graphic
-                        Design, Events Coordination, Adobe (Photoshop,
-                        Illustrator, InDesign)
                     </p>
                 </div>
             </section>
@@ -87,11 +115,16 @@ export default function Portfolio() {
                 <div>
                     <h3>SPICED ACADEMY </h3>
                     <p>2020/2021 • Berlin, Germany</p>
-                    <p>
-                        Certificate as Full-Stack Web Developer <br />-
-                        Successfully accomplished intensive 3- month coding
-                        bootcamp <br />- Supported fellow students with issues
-                    </p>
+                    <h4>Certificate as Full-Stack Web Developer</h4>
+                    <div className={styles["list"]}>
+                        <p className={styles["list-el"]}>
+                            Successfully accomplished intensive 3-month coding
+                            bootcamp
+                        </p>
+                        <p className={styles["list-el"]}>
+                            Supported fellow students with issues
+                        </p>
+                    </div>
                     <p>
                         Full-Stack Development, HTML, CSS, JavaScript, React.js
                         (with Hooks and Redux), Vue.js, SQL (Postgress),
@@ -106,10 +139,13 @@ export default function Portfolio() {
                         AID BERLIN – Akademie für Illustration und Design Berlin
                     </h3>
                     <p>2014/2018 • Berlin, Germany</p>
-                    <p>
-                        Certificate as Designer and Illustrator <br />-
-                        Successfully accomplished 8-semester Studium Ausbildung
-                    </p>
+                    <h4>Certificate as Designer and Illustrator</h4>
+                    <div className={styles["list"]}>
+                        <p className={styles["list-el"]}>
+                            Successfully accomplished 8-semester Studium
+                            Ausbildung
+                        </p>
+                    </div>
                     <p>
                         Graphic Design, Adobe (Photoshop, Illustrator, InDesign,
                         AfterEffect), Illustration, Photograpy, Branding,
@@ -122,21 +158,28 @@ export default function Portfolio() {
             <section className={styles["skills"]}>
                 <h2>Main Skills</h2>
                 <div>
-                    <h3>Coding</h3>
-                    <p>• JavaScript (ES6), HTML 5, CSS 3</p>
+                    <h3>Web Development</h3>
+                    <p>• JavaScript (ES6), HTML 5, CSS3, JSX</p>
                     <p>• React.js (with Hooks and Redux), Next.js, Vue.js</p>
                     <p>• SQL (Postgress, Prisma)</p>
-                    <p>• Node.js, Express, jQuery, Handlebars</p>
-                    <p>• Webpack, npm</p>
-                    <p>• Git, GitHub, Command-Line, VS Code</p>
                     <p>
-                        • AWS (Amplify, API Gateway, IAM, DynamoDB, Lambda, S3,
-                        Route53)
+                        • Node.js, Express, jQuery, Handlebars, Socket.io, axios
                     </p>
+                    <p>• Webpack, npm</p>
+                    <p>• Git, GitHub, Command-Line, VS Code, Atom</p>
+                    <p>
+                        • AWS (Amplify, API Gateway, IAM, DynamoDB, RDS, Lambda,
+                        S3, Route53, SES)
+                    </p>
+                    <p>• AWS SDK, Stripe React Native SDK, PayPal JS SDK</p>
+                    <p>• REST API&apos;s</p>
                     <p>• Heroku, Vercel, Netlify</p>
+                    <p>• pgAdmin, SQLWorkbench, ElephantSQL</p>
                     <p>• Security: CSRF, Clickjacking</p>
-                    <p>• API&apos;s</p>
-                    <p>• WordPress</p>
+                    <p>• Testing: Jest</p>
+                    <p>• WordPress, Shopify</p>
+                    <p>• Content Delivery Network: Cloudinary</p>
+                    <p>• SEO (Search Engine Optimization)</p>
                 </div>
                 <div>
                     <h3>Graphic Design</h3>
@@ -147,29 +190,27 @@ export default function Portfolio() {
                     <p>• Adobe AfterEffect</p>
                     <p>• Maxon Cinema 4D</p>
                     <p>• Brand ID, Logo Design</p>
-                    <p>• Web Design, UI, UX</p>
+                    <p>• Web Design, UI/UX, Responsive Design</p>
                     <p>• Publication Design, Editorial Design</p>
-                    <p>• Illustration</p>
+                    <p>• Illustrations</p>
                 </div>
             </section>
 
             <section className={styles["projects"]}>
-                <h2>Projects</h2>
+                <h2>Main Projects</h2>
                 <div>
                     <h3>DA MAMY A MAMY</h3>
                     <p>e-commerce</p>
                     <p>
                         E-commerce website for a small business in Italy, user
                         can register, buy items, shop filters, cart, different
-                        payment methods and checkout options. (Next.js, Redux,
-                        Node.js, AWS), contact form
+                        payment methods and checkout options. Next.js, Redux,
+                        Node.js, AWS SDK, contact form
                     </p>
-                    <Link href={`/project/da-mamy-a-mamy`}>
-                        <a>
-                            <button className={styles["link-box"]}>
-                                See the project
-                            </button>
-                        </a>
+                    <Link passHref href={`/project/da-mamy-a-mamy`}>
+                        <button className={styles["link-box"]}>
+                            See the project
+                        </button>
                     </Link>
                 </div>
                 <div>
@@ -179,41 +220,35 @@ export default function Portfolio() {
                         Register/login, change Password (verification Email via
                         AWS), upload images, send/cancel friend requests, group
                         chat, add/edit Biography, post items and search
-                        functionality. (React.js, Redux, Socket.io, Node.js,
-                        PostgreSQL)
+                        functionality. React.js, Redux, Socket.io, Node.js,
+                        PostgreSQL.
                     </p>
-                    <Link href={`/project/spiced-final-project`}>
-                        <a>
-                            <button className={styles["link-box"]}>
-                                See the project
-                            </button>
-                        </a>
+                    <Link passHref href={`/project/spiced-final-project`}>
+                        <button className={styles["link-box"]}>
+                            See the project
+                        </button>
                     </Link>
                 </div>
                 <div>
                     <h3>IMAGE BOARD</h3>
                     <p>Bootcamp project</p>
                     <p>
-                        Upload, comment, and like images. (Vue.js, Node.js,
-                        PostgreSQL)
+                        Upload, comment, and like images. Vue.js, Node.js,
+                        PostgreSQL.
                     </p>
-                    <Link href={`/project/spiced-image-board`}>
-                        <a>
-                            <button className={styles["link-box"]}>
-                                See the project
-                            </button>
-                        </a>
+                    <Link passHref href={`/project/spiced-image-board`}>
+                        <button className={styles["link-box"]}>
+                            See the project
+                        </button>
                     </Link>
                 </div>
             </section>
 
             <div className={styles["links-wrap"]}>
-                <Link href={`/projects`}>
-                    <a>
-                        <button className={styles["link-box"]}>
-                            All my projects
-                        </button>
-                    </a>
+                <Link passHref href={`/projects`}>
+                    <button className={styles["link-box"]}>
+                        All my projects
+                    </button>
                 </Link>
 
                 <a

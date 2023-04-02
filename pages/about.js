@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { useState } from "react";
-import styles from "../shared/styles/About.module.css";
+import styles from "@/styles/About.module.css";
 
 export default function About() {
-    const [selection, setSelection] = useState("design");
+    const [selection, setSelection] = useState("coding");
 
     const Text = () =>
         selection === "design" ? (
@@ -219,16 +219,6 @@ export default function About() {
 
             <section className={styles["headings"]}>
                 <h1
-                    onClick={() => setSelection("design")}
-                    className={
-                        selection === "design"
-                            ? styles["selected"]
-                            : styles["not-selected"]
-                    }
-                >
-                    DESIGN
-                </h1>
-                <h1
                     onClick={() => setSelection("coding")}
                     className={
                         selection === "coding"
@@ -237,6 +227,16 @@ export default function About() {
                     }
                 >
                     CODING
+                </h1>
+                <h1
+                    onClick={() => setSelection("design")}
+                    className={
+                        selection === "design"
+                            ? styles["selected"]
+                            : styles["not-selected"]
+                    }
+                >
+                    DESIGN
                 </h1>
                 <h1
                     onClick={() => setSelection("myself")}

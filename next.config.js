@@ -1,6 +1,6 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
     reactStrictMode: true,
-    disableStaticImages: true,
 
     i18n: {
         localeDetection: false,

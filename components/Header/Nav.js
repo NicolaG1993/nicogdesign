@@ -1,11 +1,12 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { useSelector, shallowEqual, useDispatch } from "react-redux";
 const ColorModeButton = dynamic(() => import("./ColorModeButton"), {
     ssr: false,
 });
-const selectLayouts = (state) => state.toggleLayout.layouts[1];
+// const selectLayouts = (state) => state.toggleLayout.layouts[1];
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
+import { selectLayoutsState } from "@/redux/slices/uiSlice";
 
 const links = [
     {
@@ -27,13 +28,14 @@ const links = [
 ];
 
 function Nav({ close }) {
-    let { active } = useSelector(selectLayouts, shallowEqual);
+    // let { active } = useSelector(selectLayouts, shallowEqual);
+    let layouts = useSelector(selectLayoutsState, shallowEqual);
 
     return (
         <nav
             id={styles["Nav"]}
             style={
-                active
+                layouts[1].status
                     ? { transform: "translateX(-100%)" }
                     : { transform: "translateX(0%)" }
             }
@@ -45,10 +47,8 @@ function Nav({ close }) {
             <div className={styles["nav-box"]}>
                 <ul className={styles["header-nav-ul"]}>
                     {links.map((link, i) => (
-                        <Link href={link.to} key={i}>
-                            <a onClick={close}>
-                                <li>{link.title} </li>
-                            </a>
+                        <Link passHref href={link.to} key={i} onClick={close}>
+                            <li>{link.title} </li>
                         </Link>
                     ))}
                 </ul>

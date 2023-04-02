@@ -76,7 +76,9 @@
 }
 .project-box > div:nth-child(1) p {
     margin-bottom: 35px;
-    min-height: 120px;
+    /* min-height: 120px; */
+    letter-spacing: 0.5px;
+    text-align: justify;
 }
 
 .links-box {

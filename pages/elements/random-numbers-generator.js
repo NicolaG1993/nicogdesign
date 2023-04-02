@@ -1,10 +1,11 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
-import styles from "../../shared/styles/Project.module.css";
-import projectLists from "../../shared/data/allProjects.js";
-import GitHub from "../../components/Project/assets/github.svg";
+import styles from "@/styles/Tool.module.css";
+import designProjects from "@/shared/data/design.js";
+import codingProjects from "@/shared/data/coding.js";
+import GitHub from "@/components/Project/assets/github.svg";
 
-export default function Element({ project }) {
+export default function RandomNumbersGenerator() {
     const [form, setForm] = useState({
         numbers: 1,
         from: 1,
@@ -84,8 +85,8 @@ export default function Element({ project }) {
     };
 
     return (
-        <div id={styles["Project"]}>
-            <Head>
+        <>
+            {/* <Head>
                 <title>
                     Random Numbers Generator - NGD | Nicola Gaioni Design
                 </title>
@@ -94,21 +95,11 @@ export default function Element({ project }) {
                     property="og:title"
                     content={`Random Numbers Generator - NGD | Nicola Gaioni Design`}
                 />
-            </Head>
+            </Head> */}
 
-            <h1 lang="en-US">Random Numbe&shy;rs Genera&shy;tor</h1>
+            {/* <h1 lang="en-US">Random Numbe&shy;rs Genera&shy;tor</h1> */}
 
-            <h4>
-                {project.tags.map((str, i) =>
-                    i === project.tags.length - 1 ? (
-                        <span key={str}>{str}</span>
-                    ) : (
-                        <span key={str}>{str}, </span>
-                    )
-                )}
-            </h4>
-
-            {project.urls && (
+            {/* {project.urls && (
                 <div className={styles["links-bar"]}>
                     <div className={styles["icons-box"]}>
                         {project.urls.github && (
@@ -137,9 +128,9 @@ export default function Element({ project }) {
                         )}
                     </div>
                 </div>
-            )}
+            )} */}
 
-            <div className={styles["element"]}>
+            <div className={styles["tool"]}>
                 <div className={styles["form-wrap"]}>
                     <form
                         onChange={(e) => handleChange(e)}
@@ -211,52 +202,45 @@ export default function Element({ project }) {
                         </div>
 
                         <div className={styles["grid-column-1to5"]}>
-                            <button
-                                className={styles["submit-box"]}
-                                type="submit"
-                            >
-                                Generate
-                            </button>
+                            <button type="submit">Generate</button>
                         </div>
                     </form>
                 </div>
 
                 <div className={styles["form-results"]}>
-                    <div className={styles["results-box"]}>
-                        <h3>Your random numbers</h3>
-                        <p>{result.map((el) => `${el} `)}</p>
-                    </div>
-
-                    <div className={styles["results-box"]}>
-                        <h3>Last numbers</h3>
-                        <div>
-                            {lastResults
-                                .slice(0)
-                                .reverse()
-                                .map(
-                                    (el, i) =>
-                                        i < 10 && (
-                                            <p key={i}>
-                                                {el.map((n) => `${n} `)}
-                                            </p>
-                                        )
-                                )}
-                        </div>
-                    </div>
-
                     <div>
-                        <button
-                            onClick={clearResults}
-                            className={styles["submit-box"]}
-                            type="button"
-                        >
-                            Clear Results
-                        </button>
+                        <div className={styles["results-box"]}>
+                            <h3>Your random numbers</h3>
+                            <p>{result.map((el) => `${el} `)}</p>
+                        </div>
+
+                        <div className={styles["results-box"]}>
+                            <h3>Last numbers</h3>
+                            <div>
+                                {lastResults
+                                    .slice(0)
+                                    .reverse()
+                                    .map(
+                                        (el, i) =>
+                                            i < 10 && (
+                                                <p key={i}>
+                                                    {el.map((n) => `${n} `)}
+                                                </p>
+                                            )
+                                    )}
+                            </div>
+                        </div>
+
+                        <div className={styles["submit-box"]}>
+                            <button onClick={clearResults} type="button">
+                                Clear Results
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div className={styles["notes-wrap"]}>
-                    <h2>Take notes</h2>
+                    <h3>Notes</h3>
                     <textarea
                         name="notes"
                         cols="30"
@@ -266,17 +250,18 @@ export default function Element({ project }) {
                     ></textarea>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
-export async function getServerSideProps(context) {
-    const { resolvedUrl } = context;
-    let project = projectLists.coding.filter((el) => el.slug === resolvedUrl);
-    return {
-        props: { project: project[0] },
-    };
-}
+// export async function getServerSideProps(context) {
+//     const { resolvedUrl } = context;
+//     // let allProjects = [...designProjects, ...codingProjects];
+//     let project = codingProjects.filter((el) => el.slug === resolvedUrl);
+//     return {
+//         props: { project: project[0] },
+//     };
+// }
 
 // clear results button
 // autofix "from" quando é piu grande di "to"

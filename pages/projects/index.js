@@ -2,18 +2,18 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import styles from "../shared/styles/Projects.module.css";
-import projectLists from "../shared/data/allProjects.js";
+import styles from "@/styles/Projects.module.css";
+import designProjects from "@/shared/data/design.js";
+import codingProjects from "@/shared/data/coding.js";
 
 export default function Projects() {
-    const [selection, setSelection] = useState("design");
+    const [selection, setSelection] = useState("coding");
+    const projectLists = { coding: codingProjects, design: designProjects };
 
-    useEffect(
-        () =>
-            window.sessionStorage.getItem("ngd-projects") &&
-            setSelection(sessionStorage.getItem("ngd-projects")),
-        []
-    );
+    useEffect(() => {
+        window.sessionStorage.getItem("ngd-projects") &&
+            setSelection(sessionStorage.getItem("ngd-projects"));
+    }, []);
 
     const handleChange = (str) => {
         setSelection(str);
@@ -33,16 +33,6 @@ export default function Projects() {
 
             <section className={styles["headings"]}>
                 <h1
-                    onClick={() => handleChange("design")}
-                    className={
-                        selection === "design"
-                            ? styles["selected"]
-                            : styles["not-selected"]
-                    }
-                >
-                    DESIGN
-                </h1>
-                <h1
                     onClick={() => handleChange("coding")}
                     className={
                         selection === "coding"
@@ -51,6 +41,16 @@ export default function Projects() {
                     }
                 >
                     CODING
+                </h1>
+                <h1
+                    onClick={() => handleChange("design")}
+                    className={
+                        selection === "design"
+                            ? styles["selected"]
+                            : styles["not-selected"]
+                    }
+                >
+                    DESIGN
                 </h1>
             </section>
 
@@ -74,17 +74,24 @@ export default function Projects() {
                                 <div>
                                     <p>{el.description}</p>
 
+                                    {el.stack && (
+                                        <p className={styles["stack"]}>
+                                            Stack:{" "}
+                                            {el.stack.map((str, i) =>
+                                                i === el.stack.length - 1
+                                                    ? `${str}.`
+                                                    : `${str}, `
+                                            )}
+                                        </p>
+                                    )}
+
                                     <div className={styles["links-box"]}>
-                                        <Link href={`${el.slug}`}>
-                                            <a>
-                                                <button
-                                                    className={
-                                                        styles["link-box"]
-                                                    }
-                                                >
-                                                    More info
-                                                </button>
-                                            </a>
+                                        <Link passHref href={`${el.slug}`}>
+                                            <button
+                                                className={styles["link-box"]}
+                                            >
+                                                More info
+                                            </button>
                                         </Link>
 
                                         {el.urls && el.urls.website && (
@@ -98,9 +105,24 @@ export default function Projects() {
                                                         styles["link-box"]
                                                     }
                                                 >
-                                                    Go to the project
+                                                    Visit website
                                                 </button>
                                             </a>
+                                        )}
+
+                                        {el.urls && el.urls.library && (
+                                            <Link
+                                                passHref
+                                                href={`${el.urls.library}`}
+                                            >
+                                                <button
+                                                    className={
+                                                        styles["link-box"]
+                                                    }
+                                                >
+                                                    Open Library
+                                                </button>
+                                            </Link>
                                         )}
                                     </div>
                                 </div>
@@ -111,8 +133,8 @@ export default function Projects() {
                                     <Image
                                         src={el.thumbnail}
                                         alt={el.title}
-                                        layout="fill"
-                                        objectFit="cover"
+                                        fill
+                                        style={{ objectFit: "cover" }}
                                     />
                                 ) : (
                                     <></>

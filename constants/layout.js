@@ -1,25 +1,26 @@
 import Head from "next/head";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 import { useEffect } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import { keepTheme } from "../shared/utils/themes";
-import Nav from "../components/Header/Nav";
-import { toggleLayout } from "../redux/ToggleLayout/toggleLayout.actions";
-import useWindowDimensions from "../shared/utils/useWindowDimensions";
-const selectLayouts = (state) => state.toggleLayout.layouts[1];
+import { keepTheme } from "@/shared/utils/themes";
+import Nav from "@/components/Header/Nav";
+import useWindowDimensions from "@/shared/utils/useWindowDimensions";
+// import { toggleLayout } from "@/redux/ToggleLayout/toggleLayout.actions";
+// const selectLayouts = (state) => state.toggleLayout.layouts[1];
+import { close, toggle, selectLayoutsState } from "@/redux/slices/uiSlice";
 
 export default function Layout({ children }) {
-    const { width } = useWindowDimensions();
-    let { active } = useSelector(selectLayouts, shallowEqual);
+    // const { width } = useWindowDimensions();
+    let layouts = useSelector(selectLayoutsState, shallowEqual);
 
     const dispatch = useDispatch();
-    const toggle = () => {
-        dispatch(toggleLayout({ id: "nav", fn: "toggle" }));
+    const toggleNav = () => {
+        dispatch(toggle({ component: "nav" }));
     };
-    const close = () => {
-        dispatch(toggleLayout({ id: "nav", fn: "close" }));
+    const closeNav = () => {
+        dispatch(close({ component: "nav" }));
     };
 
     useEffect(() => keepTheme(), []);
@@ -35,11 +36,11 @@ export default function Layout({ children }) {
                 <meta charSet="UTF-8" />
             </Head>
 
-            <Header close={close} toggle={toggle} />
-            <Nav close={close} />
+            <Header close={closeNav} toggle={toggleNav} />
+            <Nav close={closeNav} />
             <main
                 style={
-                    active
+                    layouts[1].status
                         ? { transform: "translateX(-30vw)" }
                         : { transform: "translateX(0%)" }
                 }

@@ -19,6 +19,9 @@
     border-top: 3px var(--text) solid;
     width: 100%;
     padding: 160px 40px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #Portfolio section h2 {
     font-size: 40px;
@@ -29,14 +32,43 @@
 }
 #Portfolio section div {
     padding-left: 20px;
-    max-width: 66%;
+    /* max-width: 66%; */
+    width: 100%;
+    max-width: 640px;
     margin-bottom: 80px;
     border-left: 3px var(--text) solid;
     /* border-bottom: 3px var(--text) solid; */
 }
+
 #Portfolio section div h3 {
     font-size: 24px;
     font-weight: 900;
+}
+#Portfolio section > div > p:last-child {
+    margin-bottom: 0;
+}
+#Portfolio h4,
+#Portfolio p {
+    line-height: 1.5em;
+}
+#Portfolio .list {
+    margin-bottom: var(--size000);
+    /* padding-left: 10px; */
+    padding-left: 0;
+    border-left: none;
+}
+#Portfolio .list-el {
+    margin-left: 17px;
+    margin-bottom: 0;
+}
+
+#Portfolio .list-el::before {
+    content: "•";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -17px;
+    margin-right: 10px;
 }
 
 .experience {
@@ -68,15 +100,15 @@
 }
 
 @media screen and (min-width: 1100px) {
-    #Portfolio section {
+    /* #Portfolio section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     #Portfolio section div {
         width: 100%;
-        max-width: 900px;
-    }
+        max-width: 700px;
+    } */
 }
 @media screen and (max-width: 720px) {
     #Portfolio h1 {
