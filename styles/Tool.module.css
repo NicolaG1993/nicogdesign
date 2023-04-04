@@ -1,6 +1,6 @@
 .tool {
     width: 100%;
-    margin-top: var(--size700);
+    /* margin-top: var(--size700); */
     display: flex;
     flex-wrap: wrap;
     row-gap: var(--size700);
