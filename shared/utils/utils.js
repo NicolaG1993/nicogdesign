@@ -258,12 +258,12 @@ export {
     numberValidation,
     decimalValidation,
     //
-    // createObjectURL,
-    // revokeObjectURL,
+    createObjectURL,
+    revokeObjectURL,
     //
     formatJSDate,
     formatJSDateWithTime,
-    // formatDateShort,
+    formatDateShort,
     formatDateForInput,
     //
 };

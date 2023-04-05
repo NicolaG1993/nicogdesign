@@ -7,12 +7,18 @@ import jsUtils from "@/shared/data/js-utils.js";
 
 export default function JSUtils() {
     const [selected, setSelected] = useState();
+    const [result, setResult] = useState();
+
+    useEffect(
+        () => (selected ? renderFunction(selected) : setResult()),
+        [selected]
+    );
 
     const renderFunction = (selected) => {
         const fn = selected.function;
         let args = JSON.parse(JSON.stringify(selected.arguments)); // JSON.parse and JSON.stringify to COPY arguments
         let allArgs = Object.values(args); // Object.values to SEPARATE all arguments in an array
-        return JSON.stringify(fn(...allArgs), null, 4); // spread syntax to RUN separate arguments
+        setResult(JSON.stringify(fn(...allArgs), null, 4)); // spread syntax to RUN separate arguments
     };
 
     return (
@@ -78,22 +84,31 @@ export default function JSUtils() {
 
                                 <div className={styles["result-wrap"]}>
                                     <p>Result</p>
-                                    <pre>{renderFunction(selected)}</pre>
+                                    <pre>{result}</pre>
                                 </div>
                             </div>
 
                             <div className={styles["description-wrap"]}>
                                 <h2>Info</h2>
+                                <div className={styles["category-wrap"]}>
+                                    <p>
+                                        <strong>CATEGORY: </strong>{" "}
+                                        {selected.group}
+                                    </p>
+                                </div>
                                 <div>
-                                    <div
+                                    {/* <div
                                         className={styles["thumbnail-wrap"]}
                                     ></div>
                                     <div
                                         className={styles["description"]}
-                                    ></div>
-                                    <div
-                                        className={styles["documentation-wrap"]}
-                                    ></div>
+                                    ></div> */}
+                                    <div className={styles["info-wrap"]}>
+                                        <p>
+                                            <strong>DOCUMENTATION:</strong>
+                                        </p>
+                                        {selected.documentation}
+                                    </div>
                                 </div>
                             </div>
                         </>
