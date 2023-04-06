@@ -238,6 +238,38 @@ function formatDateForInput(date) {
     return dt;
 }
 
+///////////////* NEW 2023 *///////////////
+
+function regroupObjects(arr, key) {
+    let groups = {};
+    arr.map((obj) => {
+        if (!groups[obj[key]]) {
+            groups[obj[key]] = [obj];
+        } else {
+            groups[obj[key]].push(obj);
+        }
+    });
+    return groups;
+}
+function extractGroups(arr, key) {
+    let groups = {};
+    arr.map((obj) => {
+        if (!groups[obj[key]]) {
+            groups[obj[key]] = false;
+        }
+    });
+    return groups;
+}
+function sortObjByKey(data) {
+    const result = Object.keys(data)
+        .sort()
+        .reduce((obj, key) => {
+            obj[key] = data[key];
+            return obj;
+        }, {});
+    return result;
+}
+
 export {
     //
     extractObjValuesIDs,
@@ -266,4 +298,9 @@ export {
     formatDateShort,
     formatDateForInput,
     //
+    regroupObjects,
+    extractGroups,
+    sortObjByKey,
 };
+
+// dividere in files separati per gruppo

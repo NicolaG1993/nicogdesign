@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { keepTheme } from "@/shared/utils/themes";
 import Nav from "@/components/Header/Nav";
-import useWindowDimensions from "@/shared/utils/useWindowDimensions";
+import useWindowDimensions from "@/shared/custom-hooks/useWindowDimensions";
 // import { toggleLayout } from "@/redux/ToggleLayout/toggleLayout.actions";
 // const selectLayouts = (state) => state.toggleLayout.layouts[1];
 import { close, toggle, selectLayoutsState } from "@/redux/slices/uiSlice";

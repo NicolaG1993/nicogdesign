@@ -32,8 +32,8 @@ export default function ReactComponents() {
                             key={el.title}
                             className={
                                 selected && el.title === selected.title
-                                    ? styles["selected"]
-                                    : ""
+                                    ? `${styles["comp"]} ${styles["selected"]}`
+                                    : styles["comp"]
                             }
                             onClick={() =>
                                 setSelected(

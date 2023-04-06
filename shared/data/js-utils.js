@@ -1,3 +1,4 @@
+import { getError } from "../utils/error";
 import {
     ageValidation,
     decimalValidation,
@@ -20,6 +21,9 @@ import {
     formatJSDateWithTime,
     formatDateShort,
     formatDateForInput,
+    regroupObjects,
+    extractGroups,
+    sortObjByKey,
 } from "../utils/utils";
 
 import Pic from "@/public/portrait.jpeg";
@@ -874,6 +878,89 @@ const jsUtils = [
                 </p>
                 <ul>
                     <li>wrong data types</li>
+                </ul>
+            </>
+        ),
+    },
+    {
+        title: "getError(err)",
+        stack: ["JavaScript (ES6)"],
+        function: getError,
+        arguments: {
+            err: {
+                response: { data: { message: "Error code 404 - Not Found" } },
+            },
+        },
+        group: "Error Handlers",
+        documentation: (
+            <>
+                <ul>
+                    <li></li>
+                </ul>
+            </>
+        ),
+    },
+    /* NEW 2023 */
+    {
+        title: "regroupObjects(data, key)",
+        stack: ["JavaScript (ES6)"],
+        function: regroupObjects,
+        arguments: {
+            data: [
+                { name: "Toby", group: "Dogs" },
+                { name: "Luna", group: "Cats" },
+                { name: "Lucky", group: "Dogs" },
+                { name: "Nemo", group: "Fishes" },
+            ],
+            key: "group",
+        },
+        group: "Data Parsers",
+        documentation: (
+            <>
+                <ul>
+                    <li></li>
+                </ul>
+            </>
+        ),
+    },
+    {
+        title: "extractGroups(data, key)",
+        stack: ["JavaScript (ES6)"],
+        function: extractGroups,
+        arguments: {
+            data: [
+                { name: "Toby", group: "Dogs" },
+                { name: "Luna", group: "Cats" },
+                { name: "Lucky", group: "Dogs" },
+                { name: "Nemo", group: "Fishes" },
+            ],
+            key: "group",
+        },
+        group: "Data Parsers",
+        documentation: (
+            <>
+                <ul>
+                    <li></li>
+                </ul>
+            </>
+        ),
+    },
+    {
+        title: "sortObjByKey(data)",
+        stack: ["JavaScript (ES6)"],
+        function: sortObjByKey,
+        arguments: {
+            data: {
+                b: "foo",
+                c: "bar",
+                a: "baz",
+            },
+        },
+        group: "Data Sorters",
+        documentation: (
+            <>
+                <ul>
+                    <li></li>
                 </ul>
             </>
         ),

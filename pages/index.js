@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import TypeWriter from "@/components/TypeWriter/TypeWriter";
 import styles from "@/styles/Home.module.css";
-import useScrollPosition from "@/shared/utils/useScrollPosition";
+import useScrollPosition from "@/shared/custom-hooks/useScrollPosition";
 import axios from "axios";
 
 export default function Home() {
