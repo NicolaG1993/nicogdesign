@@ -13,7 +13,6 @@ import {
 
 export default function JSUtils() {
     const groups = regroupObjects(jsUtils, "group");
-    console.log(groups);
     const [navStatus, setNavStatus] = useState(extractGroups(jsUtils, "group"));
     const [selected, setSelected] = useState();
     const [result, setResult] = useState();
@@ -65,8 +64,8 @@ export default function JSUtils() {
                                         className={
                                             selected &&
                                             el.title === selected.title
-                                                ? styles["selected"]
-                                                : ""
+                                                ? `${styles["el"]} ${styles["selected"]}`
+                                                : styles["el"]
                                         }
                                         onClick={() =>
                                             setSelected(
@@ -82,33 +81,13 @@ export default function JSUtils() {
                                 ))}
                         </>
                     ))}
-
-                    {/* {jsUtils.map((el) => (
-                        <div
-                            key={el.title}
-                            className={
-                                selected && el.title === selected.title
-                                    ? styles["selected"]
-                                    : ""
-                            }
-                            onClick={() =>
-                                setSelected(
-                                    selected && el.title === selected.title
-                                        ? ""
-                                        : el
-                                )
-                            }
-                        >
-                            {el.title}
-                        </div>
-                    ))} */}
                 </nav>
 
                 <div className={styles["render-area"]}>
                     {selected ? (
                         <>
                             <div className={styles["headings-wrap"]}>
-                                <h1 lang="en-US">{selected.title}</h1>
+                                <h1>{selected.title}</h1>
                             </div>
 
                             <div className={styles["component-wrap"]}>

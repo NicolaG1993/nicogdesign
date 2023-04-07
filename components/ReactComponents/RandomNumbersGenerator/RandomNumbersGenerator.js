@@ -1,9 +1,9 @@
-import Head from "next/head";
+// import Head from "next/head";
 import { useState, useEffect } from "react";
-import styles from "@/styles/Tool.module.css";
-import designProjects from "@/shared/data/design.js";
-import codingProjects from "@/shared/data/coding.js";
-import GitHub from "@/components/Project/assets/github.svg";
+import styles from "./RandomNumbersGenerator.module.css";
+// import designProjects from "@/shared/data/design.js";
+// import codingProjects from "@/shared/data/coding.js";
+// import GitHub from "@/components/Project/assets/github.svg";
 
 export default function RandomNumbersGenerator() {
     const [form, setForm] = useState({

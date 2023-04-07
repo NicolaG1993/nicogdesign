@@ -34,27 +34,25 @@
     text-decoration: underline;
 }
 
-.side-nav > .comp {
-    padding: 1rem 20px;
-    background-color: var(--bg000);
+.side-nav > .el {
+    padding: 1rem 20px 1rem 30px;
+    font-size: 0.775rem;
+    background-color: var(--bg200);
+    font-weight: 600;
 }
-.side-nav > .comp:hover {
-    /* background-color: var(--bg000); */
+.side-nav > .el:hover {
+    background-color: var(--bg300);
 }
 
 .side-nav > div {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    padding: 1rem 20px 1rem 30px;
-    font-size: 0.775rem;
     cursor: pointer;
     letter-spacing: 0.5px;
-    background-color: var(--bg200);
     outline: 1px solid var(--text);
     margin-top: 1px;
     margin-bottom: 1px;
-    font-weight: 600;
 }
 .side-nav > div:hover {
     background-color: var(--bg300);
@@ -110,7 +108,36 @@
     align-items: center;
 }
 
-.component-wrap pre {
+.component-wrap > .box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.component-wrap > .box > .props {
+    padding-left: var(--size200);
+    border-left: 2px solid var(--text);
+    width: 450px;
+}
+.component-wrap > .box > .props > pre {
+    max-width: 380px;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+.component-wrap > .box > .separator {
+    width: 2px;
+    height: 100%;
+    background: var(--text);
+}
+
+.component-wrap > .box > .component:nth-child(2) {
+    /* width: 100%;
+    max-width: 500px; */
+    padding-left: var(--size200);
+    border-left: 2px solid var(--text);
+    width: 450px;
+}
+
+.args-wrap pre {
     width: 650px;
 }
 

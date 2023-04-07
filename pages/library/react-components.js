@@ -4,14 +4,29 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "@/styles/Library.module.css";
 import reactComponents from "@/shared/data/react-components.js";
+import {
+    extractGroups,
+    regroupObjects,
+    sortObjByKey,
+} from "@/shared/utils/utils";
 
 export default function ReactComponents() {
+    const groups = regroupObjects(reactComponents, "group");
+    const [navStatus, setNavStatus] = useState(
+        extractGroups(reactComponents, "group")
+    );
     const [selected, setSelected] = useState();
 
     const renderComponent = (selected) => {
-        let { Component } = selected;
-        return <Component />;
+        let { Component, props } = selected;
+        return <Component {...props} />; // 🧠 testare se mantiene pageProps cosi!
     };
+
+    const toggleNav = (key) =>
+        setNavStatus((prev) => ({
+            ...prev,
+            [key]: !navStatus[key],
+        }));
 
     return (
         <div id={styles["Library"]}>
@@ -26,25 +41,39 @@ export default function ReactComponents() {
 
             <section>
                 <nav className={styles["side-nav"]}>
-                    {/* side nav dove selezionare component da renderizzare */}
-                    {reactComponents.map((el) => (
-                        <div
-                            key={el.title}
-                            className={
-                                selected && el.title === selected.title
-                                    ? `${styles["comp"]} ${styles["selected"]}`
-                                    : styles["comp"]
-                            }
-                            onClick={() =>
-                                setSelected(
-                                    selected && el.title === selected.title
-                                        ? ""
-                                        : el
-                                )
-                            }
-                        >
-                            {el.title}
-                        </div>
+                    {Object.entries(sortObjByKey(groups)).map(([key, arr]) => (
+                        <>
+                            <div
+                                key={key}
+                                className={styles.group}
+                                onClick={() => toggleNav(key)}
+                            >
+                                {key}
+                            </div>
+
+                            {navStatus[key] &&
+                                arr.map((el) => (
+                                    <div
+                                        key={el.title}
+                                        className={
+                                            selected &&
+                                            el.title === selected.title
+                                                ? `${styles["el"]} ${styles["selected"]}`
+                                                : styles["el"]
+                                        }
+                                        onClick={() =>
+                                            setSelected(
+                                                selected &&
+                                                    el.title === selected.title
+                                                    ? ""
+                                                    : el
+                                            )
+                                        }
+                                    >
+                                        {el.title}
+                                    </div>
+                                ))}
+                        </>
                     ))}
                 </nav>
 
@@ -67,7 +96,35 @@ export default function ReactComponents() {
 
                             <div className={styles["component-wrap"]}>
                                 <h2>Component</h2>
-                                {renderComponent(selected)}
+                                <div className={styles["box"]}>
+                                    {selected.props && (
+                                        <>
+                                            <div className={styles["props"]}>
+                                                <p>
+                                                    <strong>PROPS:</strong>
+                                                </p>{" "}
+                                                <pre>
+                                                    {JSON.stringify(
+                                                        selected.props,
+                                                        null,
+                                                        4
+                                                    )}
+                                                </pre>
+                                            </div>
+                                            {/* <div
+                                                className={styles["separator"]}
+                                            ></div> */}
+                                        </>
+                                    )}
+                                    <div className={styles["component"]}>
+                                        {selected.props && (
+                                            <p>
+                                                <strong>RENDER:</strong>
+                                            </p>
+                                        )}
+                                        {renderComponent(selected)}
+                                    </div>
+                                </div>
                             </div>
 
                             <div className={styles["description-wrap"]}>
