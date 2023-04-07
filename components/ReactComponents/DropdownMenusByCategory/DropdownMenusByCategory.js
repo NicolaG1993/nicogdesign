@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import standardStyles from "./DropdownMenusByCategory.module.css";
-import Error from "@/components/ReactComponents/Error/Error";
+import Alert from "@/components/ReactComponents/Alert/Alert";
 
 export default function DropdownMenusByCategory(props) {
     //////////////////////////////
@@ -250,7 +250,7 @@ export default function DropdownMenusByCategory(props) {
     return (
         <div className={styles.wrapper}>
             {error ? (
-                <Error error={error} styles={null} />
+                <Alert error={error} styles={null} />
             ) : renderReady ? (
                 renderAllData(props.obj)
             ) : (

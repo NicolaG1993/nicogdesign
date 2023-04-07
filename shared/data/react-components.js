@@ -1,5 +1,6 @@
 import RandomNumbersGenerator from "@/components/ReactComponents/RandomNumbersGenerator/RandomNumbersGenerator";
 import DropdownMenusByCategory from "@/components/ReactComponents/DropdownMenusByCategory/DropdownMenusByCategory";
+import Alert from "@/components/ReactComponents/Alert/Alert";
 
 const reactComponents = [
     {
@@ -31,13 +32,32 @@ const reactComponents = [
                     dogs: ["Boxer", "Golden Retriever", "Husky"],
                     fishes: ["Gold Fish", "Koi Carp"],
                 },
+                plants: {
+                    "succulent plants": ["Cactus"],
+                    trees: ["Baobab", "Olive Tree"],
+                },
             },
         },
         Component: (pageProps) => <DropdownMenusByCategory {...pageProps} />,
     },
+    {
+        title: "Alert",
+        group: "UI",
+        tags: ["Component"],
+        stack: ["JavaScript (ES6)", "CSS3", "JSX"],
+        full_description: "",
+        // thumbnail: "/project-pics/tools/random-numbers.png",
+        // dynamic_props: { error: {}, success: true },
+        dynamic_props: [
+            { text: "Generate Error", props: { error: "404 • Not Found!" } },
+            { text: "Generate Success", props: { success: true } },
+        ],
+        Component: (pageProps) => <Alert {...pageProps} />,
+    },
     /*
     {
         title: "",
+        group: "UI",
         tags: ["Component"],
         stack: ["JavaScript (ES6)", "CSS3", "JSX"],
         full_description: "",

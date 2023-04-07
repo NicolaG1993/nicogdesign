@@ -16,10 +16,16 @@ export default function ReactComponents() {
         extractGroups(reactComponents, "group")
     );
     const [selected, setSelected] = useState();
+    const [dynamicProps, setDynamicProps] = useState();
 
     const renderComponent = (selected) => {
-        let { Component, props } = selected;
-        return <Component {...props} />; // 🧠 testare se mantiene pageProps cosi!
+        let { Component, props, dynamic_props } = selected;
+
+        if (!dynamic_props) {
+            return <Component {...props} />; // 🧠 testare se mantiene pageProps cosi!
+        } else if (dynamic_props && dynamicProps) {
+            return <Component {...props} {...dynamicProps} />; // 🧠 testare se mantiene pageProps cosi!
+        }
     };
 
     const toggleNav = (key) =>
@@ -98,26 +104,47 @@ export default function ReactComponents() {
                                 <h2>Component</h2>
                                 <div className={styles["box"]}>
                                     {selected.props && (
-                                        <>
-                                            <div className={styles["props"]}>
-                                                <p>
-                                                    <strong>PROPS:</strong>
-                                                </p>{" "}
-                                                <pre>
-                                                    {JSON.stringify(
-                                                        selected.props,
-                                                        null,
-                                                        4
-                                                    )}
-                                                </pre>
-                                            </div>
-                                            {/* <div
-                                                className={styles["separator"]}
-                                            ></div> */}
-                                        </>
+                                        <div className={styles["props"]}>
+                                            <p>
+                                                <strong>PROPS:</strong>
+                                            </p>{" "}
+                                            <pre>
+                                                {JSON.stringify(
+                                                    selected.props,
+                                                    null,
+                                                    4
+                                                )}
+                                            </pre>
+                                        </div>
                                     )}
+
+                                    {selected.dynamic_props && (
+                                        <div className={styles["props"]}>
+                                            <p>
+                                                <strong>OPTIONS:</strong>
+                                            </p>{" "}
+                                            {selected.dynamic_props.map(
+                                                (el) => (
+                                                    <button
+                                                        key={
+                                                            "button " + el.text
+                                                        }
+                                                        onClick={() =>
+                                                            setDynamicProps(
+                                                                el.props
+                                                            )
+                                                        }
+                                                    >
+                                                        {el.text}
+                                                    </button>
+                                                )
+                                            )}
+                                        </div>
+                                    )}
+
                                     <div className={styles["component"]}>
-                                        {selected.props && (
+                                        {(selected.props ||
+                                            selected.dynamic_props) && (
                                             <p>
                                                 <strong>RENDER:</strong>
                                             </p>
