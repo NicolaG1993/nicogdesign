@@ -177,12 +177,15 @@ main {
 
 ::selection {
     /* background: rgb(196, 5, 46); */
-    background: rgb(255, 171, 14);
     /* background: rgb(135, 10, 236); */
     /* background: rgb(101, 15, 172); */
     /* background: var(--color000); */
-    color: var(--black);
+    /* color: var(--black); */
+    /* color: var(--bg000); */
+    color: white;
     padding: var(--size-300);
+    /* background: rgb(255, 171, 14); */
+    background: rgba(255, 0, 0, 0.8);
 }
 
 /***************CODE***************/

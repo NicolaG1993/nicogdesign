@@ -41,11 +41,14 @@
     margin-bottom: 100px;
 }
 .section-intro > p {
-    font-weight: 900;
+    /* font-weight: 900; */
+    font-style: italic;
+    font-weight: 600;
     font-size: 48px;
     /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
     /* text-transform: uppercase; */
     max-width: 850px;
+    letter-spacing: 0.5px;
 }
 
 #Headline {
@@ -79,9 +82,10 @@
     flex-direction: row-reverse;
 }
 .section-skills p {
-    font-weight: 900;
+    font-weight: 500;
     font-size: 36px;
     max-width: 45%;
+    letter-spacing: 0.5px;
 }
 
 /* ME */
@@ -109,10 +113,10 @@
     background-size: cover;
     background-size: 85%;
     background-position: center;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 .section-me > div > div:nth-child(1):hover {
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 /* .section-me > div:nth-child(1)::before {
     background-color: var(--bg000);

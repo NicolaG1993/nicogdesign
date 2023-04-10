@@ -43,6 +43,10 @@ export default function Project({ project }) {
                                 rel="noopener noreferrer"
                             >
                                 <GitHub />
+                                <div className={styles["icon-bg"]}></div>
+                                <div className={styles["icon-label"]}>
+                                    <span>View code</span>
+                                </div>
                             </a>
                         )}
                         {project.urls.dribbble && (
@@ -78,7 +82,7 @@ export default function Project({ project }) {
                                 rel="noopener noreferrer"
                             >
                                 <button className={styles["link-box"]}>
-                                    Visit the website
+                                    Visit website
                                 </button>
                             </a>
                         )}

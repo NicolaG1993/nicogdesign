@@ -29,7 +29,14 @@ const coding = [
     {
         title: "da Mamy a Mamy",
         slug: "/projects/da-mamy-a-mamy",
-        tags: ["E-Commerce", "Full-Stack App", "Website", "Brand ID", "SEO"],
+        tags: [
+            "E-Commerce",
+            "Full-Stack App",
+            "Website",
+            "Brand ID",
+            "SEO",
+            "Single-Page Application",
+        ],
         stack: [
             "Next.js",
             "JavaScript ES6",
@@ -70,7 +77,13 @@ const coding = [
     {
         title: "Database UI",
         slug: "/projects/database-ui",
-        tags: ["Web App", "Full-Stack App", "REST API", "Database"],
+        tags: [
+            "Web App",
+            "Full-Stack App",
+            "REST API",
+            "Database",
+            "Single-Page Application",
+        ],
         stack: [
             "Next.js",
             "JavaScript ES6",
@@ -92,14 +105,17 @@ const coding = [
 
         thumbnail: "/project-pics/db-ui/database-ui.png",
         pics: null,
-        urls: { website: "https://db-ui.vercel.app/", github: "" },
+        urls: {
+            website: "https://db-ui.vercel.app/",
+            github: "https://github.com/NicolaG1993/db-ui",
+        },
         maintained: true,
         recommended: true,
     },
     {
         title: "Bordogna Silvano Snc",
         slug: "/projects/bordogna-silvano-snc",
-        tags: ["Web App", "Brand ID", "SEO"],
+        tags: ["Web App", "Brand ID", "SEO", "Single-Page Application"],
         stack: [
             "Next.js",
             "JavaScript ES6",
@@ -147,7 +163,12 @@ const coding = [
     {
         title: "Spiced Academy - Final Project",
         slug: "/projects/spiced-final-project",
-        tags: ["Social Network", "Full-Stack App", "Bootcamp Project"],
+        tags: [
+            "Social Network",
+            "Full-Stack App",
+            "Bootcamp Project",
+            "Single-Page Application",
+        ],
         stack: [
             "React",
             "JavaScript ES6",
@@ -202,6 +223,86 @@ const coding = [
             github: "https://github.com/NicolaG1993/spiced-imageboard",
         },
         maintained: false,
+    },
+    {
+        title: "Seven Lights",
+        slug: "/projects/seven-lights",
+        tags: ["E-Commerce", "Website", "Webdesign", "SEO"],
+        stack: ["Shopify", "Liquid", "CSS3", "HTML5"],
+        description:
+            "E-commerce for a small candle manufacturer based in Berlin, Germany. At work I was required to use Shopify to ensure low production costs. I was able to use my skills as a web developer in this framework, also going to modify the various files of the themes written in Liquid. I also dealt with doing SEO and some graphic services and consultancy.",
+        full_description:
+            "E-commerce for a small candle manufacturer based in Berlin, Germany. At work I was required to use Shopify to ensure low production costs. I was able to use my skills as a web developer in this framework, also going to modify the various files of the themes written in Liquid. I also dealt with doing SEO and some graphic services and consultancy.",
+        pics: null,
+        urls: {
+            website: "https://sevenlights.shop/",
+        },
+        maintained: true,
+    },
+    {
+        title: "Heilterapien De Felice",
+        slug: "/projects/heilterapien-de-felice",
+        tags: ["Website", "Webdesign", "SEO", "Single-Page Application"],
+        stack: ["Next.js", "JavaScript ES6", "CSS3", "JSX", "Vercel"],
+        description:
+            "Updating a website of a therapist based between Switzerland and Germany. The request was to recreate the very old site based on wordpress. I developed the exact same website and webdesign in Next.js with the help of JavaScript to make it more modern, cleaner, faster, safer and bug free.",
+        full_description:
+            "Updating a website of a therapist based between Switzerland and Germany. The request was to recreate the very old site based on wordpress. I developed the exact same website and webdesign in Next.js with the help of JavaScript to make it more modern, cleaner, faster, safer and bug free.",
+        pics: null,
+        urls: {
+            website: "https://www.heiltherapien-de-felice.org/",
+            github: "https://github.com/NicolaG1993/heiltherapien-de-felice.com",
+        },
+        maintained: true,
+    },
+    {
+        title: "GINGIO • The Poyel Angels",
+        slug: "/projects/gingio-the-poyel-angels",
+        tags: ["Website", "Webdesign", "SEO", "Single-Page Application"],
+        stack: ["Next.js", "JavaScript ES6", "CSS3", "JSX", "Vercel"],
+        description:
+            "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
+        full_description:
+            "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
+
+        pics: null,
+        urls: {
+            website: "https://www.thepoyelangels.com/",
+            github: "https://github.com/NicolaG1993/gingio-the-poyel-angels",
+        },
+        maintained: true,
+    },
+    {
+        title: "GINGIO • FMC",
+        slug: "/projects/gingio-fmc",
+        tags: ["Website", "Webdesign", "SEO", "Single-Page Application"],
+        stack: ["Next.js", "JavaScript ES6", "CSS3", "JSX", "Vercel"],
+        description:
+            "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
+        full_description:
+            "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
+        pics: null,
+        urls: {
+            website: "https://www.freemusicconsultant.com/",
+            github: "https://github.com/NicolaG1993/gingio-free-music-consultant",
+        },
+        maintained: true,
+    },
+    {
+        title: "GINGIO • Kata K",
+        slug: "/projects/gingio-kata-k",
+        tags: ["Website", "Webdesign", "SEO", "Single-Page Application"],
+        stack: ["Next.js", "JavaScript ES6", "CSS3", "JSX", "Vercel"],
+        description:
+            "Website created for a musical artist from Los Angeles managed by GINGIO, the site is used to promote her via the web. An e-commerce style section was required in which to sell the merchandise. This part has been created and is ready to use, complete with a checkout process via PayPal, but no merchandise has been produced so far, so it has never been activated. I designed and developed the website, being central to the conception of webdesign.",
+        full_description:
+            "Website created for a musical artist from Los Angeles managed by GINGIO, the site is used to promote her via the web. An e-commerce style section was required in which to sell the merchandise. This part has been created and is ready to use, complete with a checkout process via PayPal, but no merchandise has been produced so far, so it has never been activated. I designed and developed the website, being central to the conception of webdesign.",
+        pics: null,
+        urls: {
+            website: "https://www.katakofficial.com/",
+            github: "https://github.com/NicolaG1993/gingio-one-pager-template",
+        },
+        maintained: true,
     },
 ];
 

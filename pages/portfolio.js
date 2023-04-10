@@ -159,40 +159,40 @@ export default function Portfolio() {
                 <h2>Main Skills</h2>
                 <div>
                     <h3>Web Development</h3>
-                    <p>• JavaScript (ES6), HTML 5, CSS3, JSX</p>
-                    <p>• React.js (with Hooks and Redux), Next.js, Vue.js</p>
-                    <p>• SQL (Postgress, Prisma)</p>
+                    <p>JavaScript (ES6), HTML 5, CSS3, JSX</p>
+                    <p>React.js (with Hooks and Redux), Next.js, Vue.js</p>
+                    <p>SQL (Postgress, Prisma)</p>
                     <p>
-                        • Node.js, Express, jQuery, Handlebars, Socket.io, axios
+                        Node.js, Express, jQuery, Handlebars, Socket.io, axios
                     </p>
-                    <p>• Webpack, npm</p>
-                    <p>• Git, GitHub, Command-Line, VS Code, Atom</p>
+                    <p>Webpack, npm</p>
+                    <p>Git, GitHub, Command-Line, VS Code, Atom</p>
                     <p>
-                        • AWS (Amplify, API Gateway, IAM, DynamoDB, RDS, Lambda,
+                        AWS (Amplify, API Gateway, IAM, DynamoDB, RDS, Lambda,
                         S3, Route53, SES)
                     </p>
-                    <p>• AWS SDK, Stripe React Native SDK, PayPal JS SDK</p>
-                    <p>• REST API&apos;s</p>
-                    <p>• Heroku, Vercel, Netlify</p>
-                    <p>• pgAdmin, SQLWorkbench, ElephantSQL</p>
-                    <p>• Security: CSRF, Clickjacking</p>
-                    <p>• Testing: Jest</p>
-                    <p>• WordPress, Shopify</p>
-                    <p>• Content Delivery Network: Cloudinary</p>
-                    <p>• SEO (Search Engine Optimization)</p>
+                    <p>AWS SDK, Stripe React Native SDK, PayPal JS SDK</p>
+                    <p>REST API&apos;s</p>
+                    <p>Heroku, Vercel, Netlify</p>
+                    <p>pgAdmin, SQLWorkbench, ElephantSQL</p>
+                    <p>Security: CSRF, Clickjacking</p>
+                    <p>Testing: Jest</p>
+                    <p>WordPress, Shopify</p>
+                    <p>Content Delivery Network: Cloudinary</p>
+                    <p>SEO (Search Engine Optimization)</p>
                 </div>
                 <div>
                     <h3>Graphic Design</h3>
-                    <p>• Adobe Photoshop</p>
-                    <p>• Adobe Illustrator</p>
-                    <p>• Adobe InDesign</p>
-                    <p>• Adobe Premiere</p>
-                    <p>• Adobe AfterEffect</p>
-                    <p>• Maxon Cinema 4D</p>
-                    <p>• Brand ID, Logo Design</p>
-                    <p>• Web Design, UI/UX, Responsive Design</p>
-                    <p>• Publication Design, Editorial Design</p>
-                    <p>• Illustrations</p>
+                    <p>Adobe Photoshop</p>
+                    <p>Adobe Illustrator</p>
+                    <p>Adobe InDesign</p>
+                    <p>Adobe Premiere</p>
+                    <p>Adobe AfterEffect</p>
+                    <p>Maxon Cinema 4D</p>
+                    <p>Brand ID, Logo Design</p>
+                    <p>Web Design, UI/UX, Responsive Design</p>
+                    <p>Publication Design, Editorial Design</p>
+                    <p>Illustrations</p>
                 </div>
             </section>
 
@@ -200,43 +200,55 @@ export default function Portfolio() {
                 <h2>Main Projects</h2>
                 <div>
                     <h3>DA MAMY A MAMY</h3>
-                    <p>e-commerce</p>
+                    <p>E-commerce</p>
                     <p>
-                        E-commerce website for a small business in Italy, user
-                        can register, buy items, shop filters, cart, different
-                        payment methods and checkout options. Next.js, Redux,
-                        Node.js, AWS SDK, contact form
+                        Website for a brand new business in Italy. User
+                        registration and login, admin reserved area, add and
+                        modify products, pictures upload, shop filters, cart,
+                        transactional emails, contact form, different payment
+                        methods and checkout options. The website is fully
+                        responsive. I was also responsible for the design and
+                        branding of the company.
                     </p>
-                    <Link passHref href={`/project/da-mamy-a-mamy`}>
+                    <Link passHref href={`/projects/da-mamy-a-mamy`}>
                         <button className={styles["link-box"]}>
                             See the project
                         </button>
                     </Link>
                 </div>
+
+                <div>
+                    <h3>DB UI</h3>
+                    <p>Full-stack app</p>
+                    <p>
+                        Web App that interfaces with a movie database,
+                        containing tables for actors, movies, studios,
+                        distribution, categories and tags. User can add/edit any
+                        database item through the UI, there is also a counter
+                        feature on each movie, to mark the day it was watched.
+                        These records will provide various rankings and
+                        statistics on your personal tastes in the appropriate
+                        section of the site. The user must provide a password
+                        and username to access.
+                    </p>
+                    <Link passHref href={`/projects/database-ui`}>
+                        <button className={styles["link-box"]}>
+                            See the project
+                        </button>
+                    </Link>
+                </div>
+
                 <div>
                     <h3>SOCIAL NETWORK</h3>
                     <p>Bootcamp project</p>
                     <p>
-                        Register/login, change Password (verification Email via
+                        Register/login, change password (verification email via
                         AWS), upload images, send/cancel friend requests, group
-                        chat, add/edit Biography, post items and search
+                        chat, add/edit biography, post items and search
                         functionality. React.js, Redux, Socket.io, Node.js,
                         PostgreSQL.
                     </p>
-                    <Link passHref href={`/project/spiced-final-project`}>
-                        <button className={styles["link-box"]}>
-                            See the project
-                        </button>
-                    </Link>
-                </div>
-                <div>
-                    <h3>IMAGE BOARD</h3>
-                    <p>Bootcamp project</p>
-                    <p>
-                        Upload, comment, and like images. Vue.js, Node.js,
-                        PostgreSQL.
-                    </p>
-                    <Link passHref href={`/project/spiced-image-board`}>
+                    <Link passHref href={`/projects/spiced-final-project`}>
                         <button className={styles["link-box"]}>
                             See the project
                         </button>

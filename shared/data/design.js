@@ -6,7 +6,7 @@ const design = [
         description:
             "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development.",
         full_description:
-            "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development.",
+            "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development. Conception, design, development and promotion of my personal brand. Including logo, graphics, business cards, website, social media and merchandise. The whole brand is based on a minimal color scheme (white, black, red) to enhance the communicative power of contrast alone.",
         thumbnail: "/project-pics/ngd/ngd-thumb.jpg",
         pics: ["/project-pics/ngd/ngd-thumb.jpg"],
         urls: null,
@@ -15,11 +15,17 @@ const design = [
     {
         title: "Logo Design and Animation",
         slug: "/projects/logo",
-        tags: ["Brand ID", "Logo Design", "Animations"],
+        tags: [
+            "Brand ID",
+            "Logo Design",
+            "Animations",
+            "Vector Graphics",
+            "Typography",
+        ],
         description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "Logo design and animations for NGD. Made with Adobe Illustrator and Adobe AfterEffect. The logo is a revised and improved version of the 2018 one.",
         full_description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "Logo design and animations for NGD. Made with Adobe Illustrator and Adobe AfterEffect. The logo is a revised and improved version of the 2018 one.",
         thumbnail: "/project-pics/ngdlogo/logo-black.jpg",
         pics: [
             "/project-pics/ngdlogo/logo-black.jpg",
@@ -41,9 +47,9 @@ const design = [
         slug: "/projects/in-circle-records",
         tags: ["Brand ID", "Logo Design", "Web Design"],
         description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
         full_description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
         thumbnail: "/project-pics/incirclerecords/mock.png",
         pics: [
             "/project-pics/incirclerecords/mock.png",
@@ -57,9 +63,9 @@ const design = [
         slug: "/projects/ngd2019",
         tags: ["Brand ID", "Logo Design", "Web Design"],
         description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "First version of my brand dating back to the end of 2018, when I finished my studies as a graphic designer. The website was designed as a graphic designer portfolio, as I was yet to start studying web programming. I certainly remember it as a big step-up in my webdesign skills with HTML and CSS. Note that I have implemented some JavaScript scripts without having any knowledge at the time. The version of this website is no longer hosted.",
         full_description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "First version of my brand dating back to the end of 2018, when I finished my studies as a graphic designer. The website was designed as a graphic designer portfolio, as I was yet to start studying web programming. I certainly remember it as a big step-up in my webdesign skills with HTML and CSS. Note that I have implemented some JavaScript scripts without having any knowledge at the time. The version of this website is no longer hosted.",
         thumbnail: "/project-pics/ngd2019/mock.png",
         pics: [
             "/project-pics/ngd2019/mock.png",
@@ -80,9 +86,9 @@ const design = [
             "Illustrations",
         ],
         description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "Final project for my studies at AID Berlin. The project was the conception and development of graphics and material to promote a garage rock band called 'ZERO'. I created the logo and various graphics, then printed 2 albums (vinyl and CD version) 2 t-shirts, 3 posters.",
         full_description:
-            "Lorem ipsum dolor sit amet, description is coming soon...",
+            "Final project for my studies at AID Berlin. The project was the conception and development of graphics and material to promote a garage rock band called 'ZERO'. I created the logo and various graphics, then printed 2 albums (vinyl and CD version) 2 t-shirts, 3 posters.",
         thumbnail: "/project-pics/zero/thumb.jpg",
         pics: [
             "/project-pics/zero/ZERO-mock4.jpg",
@@ -103,3 +109,5 @@ const design = [
 ];
 
 export default design;
+
+// "Lorem ipsum dolor sit amet, description is coming soon..."

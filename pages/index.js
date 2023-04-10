@@ -89,9 +89,9 @@ export default function Home() {
 
             <section className={styles["section-intro"]}>
                 <p>
-                    NGD was created on a belief in the power of
+                    &quot;NGD was created on a belief in the power of
                     &apos;ideas&apos; and the fact that they create a huge
-                    impact through their development.
+                    impact through their development.&quot;
                 </p>
             </section>
 
