@@ -62,6 +62,7 @@
 }
 .project-box > div:nth-child(1) {
     max-width: 66.6%;
+    position: relative;
 }
 
 .project-box > div:nth-child(1) h2 {
@@ -105,8 +106,39 @@
     background-color: var(--text);
 }
 
+#Recommended {
+    position: absolute;
+    top: -50px;
+    background: red;
+    color: white;
+    animation: pulsate 1.5s ease-out;
+    animation-iteration-count: infinite;
+    width: 200px;
+}
+#Recommended p {
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 0;
+    text-align: center;
+}
+@keyframes pulsate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .picture-box {
     border: 3px var(--text) solid;
+    background: white;
     width: 150px;
     height: 150px;
     position: relative;

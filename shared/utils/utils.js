@@ -22,7 +22,7 @@ function sortByValue(data, order) {
     }
 }
 
-function sortByObjValue(data, key, order) {
+function sortArrByObjValue(data, key, order) {
     if (!data || !key || !order) {
         return [];
     }
@@ -275,7 +275,7 @@ export {
     extractObjValuesIDs,
     //
     sortByValue,
-    sortByObjValue,
+    sortArrByObjValue,
     sortByObjNumberValue,
     sortByObjDate,
     sortByObjValueLength,

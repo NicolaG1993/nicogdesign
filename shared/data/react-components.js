@@ -23,8 +23,9 @@ const reactComponents = [
         group: "UI",
         tags: ["Component"],
         stack: ["React", "JavaScript (ES6)", "CSS3", "JSX"],
-        full_description: "",
-        // thumbnail: "/project-pics/tools/random-numbers.png",
+        full_description:
+            "UI Component used to represent a structure with dropdown menus. The object passed as a prop is looped and rendered differently for each level, based on whether the loop encounters an array or an object.",
+        thumbnail: "/project-pics/misc/ui.png",
         props: {
             obj: {
                 animals: {
@@ -45,8 +46,8 @@ const reactComponents = [
         group: "UI",
         tags: ["Component"],
         stack: ["JavaScript (ES6)", "CSS3", "JSX"],
-        full_description: "",
-        // thumbnail: "/project-pics/tools/random-numbers.png",
+        full_description: `UI Component used to display alerts for user, ideal if used to show the result of server requests. Render a different type of alert if "error" or "success" are present in the props.`,
+        thumbnail: "/project-pics/misc/ui.png",
         // dynamic_props: { error: {}, success: true },
         dynamic_props: [
             { text: "Generate Error", props: { error: "404 • Not Found!" } },

@@ -10,6 +10,7 @@ const coding = [
         pics: null,
         urls: { library: "/library/react-components" },
         maintained: true,
+        recommended: true,
     },
     {
         title: "JS Utilities",
@@ -22,6 +23,7 @@ const coding = [
         pics: null,
         urls: { library: "/library/js-utils" },
         maintained: true,
+        recommended: true,
     },
     // react custom hooks?
     {
@@ -63,6 +65,7 @@ const coding = [
             github: "https://github.com/NicolaG1993/damamyamamy",
         },
         maintained: true,
+        recommended: true,
     },
     {
         title: "Database UI",
@@ -89,8 +92,9 @@ const coding = [
 
         thumbnail: "/project-pics/db-ui/database-ui.png",
         pics: null,
-        urls: null,
+        urls: { website: "https://db-ui.vercel.app/", github: "" },
         maintained: true,
+        recommended: true,
     },
     {
         title: "Bordogna Silvano Snc",

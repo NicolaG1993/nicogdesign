@@ -10,6 +10,7 @@ const design = [
         thumbnail: "/project-pics/ngd/ngd-thumb.jpg",
         pics: ["/project-pics/ngd/ngd-thumb.jpg"],
         urls: null,
+        recommended: true,
     },
     {
         title: "Logo Design and Animation",
@@ -66,6 +67,7 @@ const design = [
             "/project-pics/ngd2019/banner.jpg",
         ],
         urls: null,
+        recommended: true,
     },
     {
         title: "ZERO",
@@ -96,6 +98,7 @@ const design = [
             "/project-pics/zero/ZERO-illustration5.jpg",
         ],
         urls: null,
+        recommended: true,
     },
 ];
 

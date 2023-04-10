@@ -8,6 +8,7 @@ import {
     extractGroups,
     regroupObjects,
     sortObjByKey,
+    sortArrByObjValue,
 } from "@/shared/utils/utils";
 
 export default function ReactComponents() {
@@ -58,27 +59,30 @@ export default function ReactComponents() {
                             </div>
 
                             {navStatus[key] &&
-                                arr.map((el) => (
-                                    <div
-                                        key={el.title}
-                                        className={
-                                            selected &&
-                                            el.title === selected.title
-                                                ? `${styles["el"]} ${styles["selected"]}`
-                                                : styles["el"]
-                                        }
-                                        onClick={() =>
-                                            setSelected(
+                                sortArrByObjValue(arr, "title", "asc").map(
+                                    (el) => (
+                                        <div
+                                            key={el.title}
+                                            className={
                                                 selected &&
-                                                    el.title === selected.title
-                                                    ? ""
-                                                    : el
-                                            )
-                                        }
-                                    >
-                                        {el.title}
-                                    </div>
-                                ))}
+                                                el.title === selected.title
+                                                    ? `${styles["el"]} ${styles["selected"]}`
+                                                    : styles["el"]
+                                            }
+                                            onClick={() =>
+                                                setSelected(
+                                                    selected &&
+                                                        el.title ===
+                                                            selected.title
+                                                        ? ""
+                                                        : el
+                                                )
+                                            }
+                                        >
+                                            {el.title}
+                                        </div>
+                                    )
+                                )}
                         </>
                     ))}
                 </nav>
@@ -119,27 +123,43 @@ export default function ReactComponents() {
                                     )}
 
                                     {selected.dynamic_props && (
-                                        <div className={styles["props"]}>
-                                            <p>
-                                                <strong>OPTIONS:</strong>
-                                            </p>{" "}
-                                            {selected.dynamic_props.map(
-                                                (el) => (
-                                                    <button
-                                                        key={
-                                                            "button " + el.text
-                                                        }
-                                                        onClick={() =>
-                                                            setDynamicProps(
-                                                                el.props
-                                                            )
-                                                        }
-                                                    >
-                                                        {el.text}
-                                                    </button>
-                                                )
-                                            )}
-                                        </div>
+                                        <>
+                                            <div className={styles["props"]}>
+                                                <p>
+                                                    <strong>OPTIONS:</strong>
+                                                </p>{" "}
+                                                {selected.dynamic_props.map(
+                                                    (el) => (
+                                                        <button
+                                                            key={
+                                                                "button " +
+                                                                el.text
+                                                            }
+                                                            onClick={() =>
+                                                                setDynamicProps(
+                                                                    el.props
+                                                                )
+                                                            }
+                                                        >
+                                                            {el.text}
+                                                        </button>
+                                                    )
+                                                )}
+                                            </div>
+
+                                            <div className={styles["props"]}>
+                                                <p>
+                                                    <strong>PROPS:</strong>
+                                                </p>
+                                                <pre>
+                                                    {JSON.stringify(
+                                                        dynamicProps,
+                                                        null,
+                                                        4
+                                                    )}
+                                                </pre>
+                                            </div>
+                                        </>
                                     )}
 
                                     <div className={styles["component"]}>
@@ -171,6 +191,11 @@ export default function ReactComponents() {
                                     </div>
 
                                     <div className={styles["description"]}>
+                                        <p>
+                                            <strong>CATEGORY: </strong>{" "}
+                                            {selected.group}
+                                        </p>
+
                                         <p>{selected.full_description}</p>
 
                                         {selected.stack && (

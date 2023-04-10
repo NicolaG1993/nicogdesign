@@ -126,6 +126,12 @@ export default function Projects() {
                                         )}
                                     </div>
                                 </div>
+
+                                {el.recommended && (
+                                    <div id={styles["Recommended"]}>
+                                        <p>recommended</p>
+                                    </div>
+                                )}
                             </div>
 
                             <div className={styles["picture-box"]}>

@@ -24,6 +24,7 @@ import {
     regroupObjects,
     extractGroups,
     sortObjByKey,
+    sortArrByObjValue,
 } from "../utils/utils";
 
 import Pic from "@/public/portrait.jpeg";
@@ -59,7 +60,7 @@ const jsUtils = [
             <ul>
                 <li>
                     used to check all keys inside an object and transform all
-                    the array of object into an array of IDs. The idea is to
+                    the array of objects into an array of IDs. The idea is to
                     prepare/parse it for API requests or Database queries
                     afterwards.
                 </li>
@@ -107,7 +108,7 @@ const jsUtils = [
     {
         title: "sortArrByObjValue(data, key, order)",
         stack: ["JavaScript (ES6)"],
-        function: sortByObjValue,
+        function: sortArrByObjValue,
         arguments: {
             data: [
                 { country: "Italy" },
