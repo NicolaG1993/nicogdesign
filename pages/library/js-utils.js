@@ -10,17 +10,17 @@ import {
     sortArrByObjValue,
     sortObjByKey,
 } from "@/shared/utils/utils";
+import useWindowDimensions from "@/shared/custom-hooks/useWindowDimensions";
 
 export default function JSUtils() {
+    const { width } = useWindowDimensions();
+    const [isSmallDevice, setIsSmallDevice] = useState(false);
+    const [navActive, setNavActive] = useState(true);
+
     const groups = regroupObjects(jsUtils, "group");
     const [navStatus, setNavStatus] = useState(extractGroups(jsUtils, "group"));
     const [selected, setSelected] = useState();
     const [result, setResult] = useState();
-
-    useEffect(
-        () => (selected ? renderFunction(selected) : setResult()),
-        [selected]
-    );
 
     const renderFunction = (selected) => {
         const fn = selected.function;
@@ -34,6 +34,20 @@ export default function JSUtils() {
             ...prev,
             [key]: !navStatus[key],
         }));
+    const toggleNavUI = () => setNavActive(!navActive);
+
+    useEffect(
+        () => (selected ? renderFunction(selected) : setResult()),
+        [selected]
+    );
+    useEffect(
+        () => (width > 720 ? setIsSmallDevice(false) : setIsSmallDevice(true)),
+        [width]
+    );
+    useEffect(
+        () => (isSmallDevice ? setNavActive(false) : setNavActive(true)),
+        [isSmallDevice]
+    );
 
     return (
         <div id={styles["Library"]}>
@@ -47,40 +61,58 @@ export default function JSUtils() {
             </Head>
 
             <section>
-                <nav className={styles["side-nav"]}>
-                    {Object.entries(sortObjByKey(groups)).map(([key, arr]) => (
-                        <>
-                            <div
-                                key={key}
-                                className={styles.group}
-                                onClick={() => toggleNav(key)}
-                            >
-                                {key}
-                            </div>
-                            {navStatus[key] &&
-                                arr.map((el) => (
+                <nav
+                    className={styles["side-nav"]}
+                    style={{
+                        transform: navActive
+                            ? "translateX(0)"
+                            : "translateX(-300px)",
+                    }}
+                >
+                    <div className={styles["nav"]}>
+                        {Object.entries(sortObjByKey(groups)).map(
+                            ([key, arr]) => (
+                                <div key={key} className={styles["group-box"]}>
                                     <div
-                                        key={el.title}
-                                        className={
-                                            selected &&
-                                            el.title === selected.title
-                                                ? `${styles["el"]} ${styles["selected"]}`
-                                                : styles["el"]
-                                        }
-                                        onClick={() =>
-                                            setSelected(
-                                                selected &&
-                                                    el.title === selected.title
-                                                    ? ""
-                                                    : el
-                                            )
-                                        }
+                                        key={key}
+                                        className={styles.group}
+                                        onClick={() => toggleNav(key)}
                                     >
-                                        {el.title}
+                                        {key}
                                     </div>
-                                ))}
-                        </>
-                    ))}
+                                    {navStatus[key] &&
+                                        arr.map((el) => (
+                                            <div
+                                                key={el.title}
+                                                className={
+                                                    selected &&
+                                                    el.title === selected.title
+                                                        ? `${styles["el"]} ${styles["selected"]}`
+                                                        : styles["el"]
+                                                }
+                                                onClick={() =>
+                                                    setSelected(
+                                                        selected &&
+                                                            el.title ===
+                                                                selected.title
+                                                            ? ""
+                                                            : el
+                                                    )
+                                                }
+                                            >
+                                                {el.title}
+                                            </div>
+                                        ))}
+                                </div>
+                            )
+                        )}
+                    </div>
+
+                    {isSmallDevice && (
+                        <div id={styles.NavBtn} onClick={() => toggleNavUI()}>
+                            <span>{navActive ? "CLOSE" : "OPEN"}</span>
+                        </div>
+                    )}
                 </nav>
 
                 <div className={styles["render-area"]}>
