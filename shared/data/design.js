@@ -42,22 +42,7 @@ const design = [
             ],
         },
     },
-    {
-        title: "In Circle Records",
-        slug: "/projects/in-circle-records",
-        tags: ["Brand ID", "Logo Design", "Web Design"],
-        description:
-            "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
-        full_description:
-            "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
-        thumbnail: "/project-pics/incirclerecords/mock.png",
-        pics: [
-            "/project-pics/incirclerecords/mock.png",
-            "/project-pics/incirclerecords/mobile.png",
-            "/project-pics/incirclerecords/tablet.png",
-        ],
-        urls: null,
-    },
+
     {
         title: "NGD 2019/2020",
         slug: "/projects/ngd2019",
@@ -74,6 +59,22 @@ const design = [
         ],
         urls: null,
         recommended: true,
+    },
+    {
+        title: "In Circle Records",
+        slug: "/projects/in-circle-records",
+        tags: ["Brand ID", "Logo Design", "Web Design"],
+        description:
+            "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
+        full_description:
+            "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
+        thumbnail: "/project-pics/incirclerecords/mock.png",
+        pics: [
+            "/project-pics/incirclerecords/mock.png",
+            "/project-pics/incirclerecords/mobile.png",
+            "/project-pics/incirclerecords/tablet.png",
+        ],
+        urls: null,
     },
     {
         title: "ZERO",

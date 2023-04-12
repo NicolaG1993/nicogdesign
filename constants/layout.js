@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { keepTheme } from "@/shared/utils/themes";
 import Nav from "@/components/Header/Nav";
@@ -12,7 +12,6 @@ import useWindowDimensions from "@/shared/custom-hooks/useWindowDimensions";
 import { close, toggle, selectLayoutsState } from "@/redux/slices/uiSlice";
 
 export default function Layout({ children }) {
-    // const { width } = useWindowDimensions();
     let layouts = useSelector(selectLayoutsState, shallowEqual);
 
     const dispatch = useDispatch();

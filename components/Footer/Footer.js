@@ -4,12 +4,12 @@ import Logo from "../Logo/Logo";
 
 export default function Footer() {
     return (
-        <>
+        <footer id={styles.Footer}>
             {/* <div id={styles["Footer"]}>
                 <div>AAA</div>
             </div> */}
             <Copyrights />
-        </>
+        </footer>
     );
 }
 

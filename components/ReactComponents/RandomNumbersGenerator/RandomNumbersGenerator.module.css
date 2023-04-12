@@ -3,14 +3,16 @@
     /* margin-top: var(--size700); */
     display: flex;
     flex-wrap: wrap;
-    row-gap: var(--size700);
+    /* row-gap: var(--size700); */
+    row-gap: var(--size500);
+    justify-content: space-between;
 }
 
 /*forms*/
 .form-wrap {
     /* width: 50%; */
     /* min-width: 450px; */
-    width: 450px;
+    /* width: 450px; */
 }
 .form-wrap > form {
     display: grid;
@@ -98,7 +100,7 @@
 }
 
 .form-results {
-    width: 450px;
+    /* width: 450px; */
 }
 .form-results > div {
     width: 350px;
@@ -117,14 +119,26 @@
 }
 
 .notes-wrap {
-    width: 450px;
+    width: 350px;
     /* margin-top: var(--size700); */
     padding-left: var(--size200);
     border-left: 2px solid var(--text);
 }
 .notes-wrap textarea {
     resize: vertical;
-    width: 350px;
+    /* width: 350px; */
+    width: 100%;
+}
+
+@media screen and (max-width: 1580px) {
+    .tool {
+        width: 800px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .tool {
+        width: 350px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -146,5 +160,16 @@
         width: 100%;
         min-width: auto;
         max-width: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .tool {
+        width: 300px;
+    }
+    .form-wrap > form,
+    .form-results > div,
+    .notes-wrap {
+        width: 300px;
     }
 }

@@ -59,6 +59,12 @@ export default function Projects() {
                     <div key={el.title}>
                         <div className={styles["project-box"]}>
                             <div>
+                                {el.recommended && (
+                                    <div id={styles["Recommended"]}>
+                                        <p>recommended</p>
+                                    </div>
+                                )}
+
                                 <h2>{el.title}</h2>
                                 <h4>
                                     {el.tags &&
@@ -126,12 +132,6 @@ export default function Projects() {
                                         )}
                                     </div>
                                 </div>
-
-                                {el.recommended && (
-                                    <div id={styles["Recommended"]}>
-                                        <p>recommended</p>
-                                    </div>
-                                )}
                             </div>
 
                             <div className={styles["picture-box"]}>

@@ -4,7 +4,8 @@
     /* left: 50%; */
     padding: 1.5rem 2rem;
     border-radius: 8px;
-    margin-top: var(--size000);
+    /* margin-top: var(--size000); */
+    width: 100%;
 }
 
 .err {

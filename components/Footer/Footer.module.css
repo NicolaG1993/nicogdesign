@@ -1,10 +1,17 @@
-#Footer,
-.copyrights {
+#Footer {
     padding: 10px 20px;
     border-top: 3px var(--text) solid;
+    background: var(--bg000);
+    position: relative;
+    z-index: 10;
+}
+.copyrights {
+    /* padding: 10px 20px;
+    border-top: 3px var(--text) solid;
+    background: var(--bg000); */
 }
 #Footer {
-    height: 350px;
+    /* height: 350px; */
 }
 #Footer > div:nth-child(1) {
 }

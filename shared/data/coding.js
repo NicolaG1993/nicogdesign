@@ -161,7 +161,7 @@ const coding = [
         maintained: false,
     },
     {
-        title: "Spiced Academy - Final Project",
+        title: "Spiced Academy • Final Project",
         slug: "/projects/spiced-final-project",
         tags: [
             "Social Network",
@@ -198,7 +198,7 @@ const coding = [
         maintained: false,
     },
     {
-        title: "Spiced Academy - Image Board",
+        title: "Spiced Academy • Image Board",
         slug: "/projects/spiced-image-board",
         tags: ["Single Page App", "Full-Stack App", "Bootcamp Project"],
         stack: [
@@ -234,6 +234,7 @@ const coding = [
         full_description:
             "E-commerce for a small candle manufacturer based in Berlin, Germany. At work I was required to use Shopify to ensure low production costs. I was able to use my skills as a web developer in this framework, also going to modify the various files of the themes written in Liquid. I also dealt with doing SEO and some graphic services and consultancy.",
         pics: null,
+        thumbnail: "/project-pics/seven-lights/seven-lights.png",
         urls: {
             website: "https://sevenlights.shop/",
         },
@@ -249,6 +250,7 @@ const coding = [
         full_description:
             "Updating a website of a therapist based between Switzerland and Germany. The request was to recreate the very old site based on wordpress. I developed the exact same website and webdesign in Next.js with the help of JavaScript to make it more modern, cleaner, faster, safer and bug free.",
         pics: null,
+        thumbnail: "/project-pics/websites/de-felice.png",
         urls: {
             website: "https://www.heiltherapien-de-felice.org/",
             github: "https://github.com/NicolaG1993/heiltherapien-de-felice.com",
@@ -264,7 +266,7 @@ const coding = [
             "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
         full_description:
             "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
-
+        thumbnail: "/project-pics/gingio/gingio.jpg",
         pics: null,
         urls: {
             website: "https://www.thepoyelangels.com/",
@@ -281,6 +283,7 @@ const coding = [
             "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
         full_description:
             "Website created for GINGIO, my long-standing client. It is a relatively simple site, which serves to promote an activity related to the company. I completely dealt with web development in every aspect, from code to hosting, from responsive design to SEO. Apart from the animations and some small adjustments I have nothing to do with the web design, which was previously provided to me by the client and I was requested to do it according to these indications.",
+        thumbnail: "/project-pics/gingio/gingio.jpg",
         pics: null,
         urls: {
             website: "https://www.freemusicconsultant.com/",
@@ -297,6 +300,7 @@ const coding = [
             "Website created for a musical artist from Los Angeles managed by GINGIO, the site is used to promote her via the web. An e-commerce style section was required in which to sell the merchandise. This part has been created and is ready to use, complete with a checkout process via PayPal, but no merchandise has been produced so far, so it has never been activated. I designed and developed the website, being central to the conception of webdesign.",
         full_description:
             "Website created for a musical artist from Los Angeles managed by GINGIO, the site is used to promote her via the web. An e-commerce style section was required in which to sell the merchandise. This part has been created and is ready to use, complete with a checkout process via PayPal, but no merchandise has been produced so far, so it has never been activated. I designed and developed the website, being central to the conception of webdesign.",
+        thumbnail: "/project-pics/gingio/gingio.jpg",
         pics: null,
         urls: {
             website: "https://www.katakofficial.com/",
