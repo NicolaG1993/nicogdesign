@@ -120,6 +120,12 @@
     display: inline;
 }
 
+@media screen and (max-height: 590px) {
+    .nav-box li {
+        font-size: 64px;
+    }
+}
+
 @media screen and (max-width: 1480px) {
     #Nav {
         width: 50%;
@@ -164,11 +170,6 @@
     } */
 }
 
-@media screen and (max-height: 590px) {
-    .nav-box li {
-        font-size: 64px;
-    }
-}
 @media screen and (max-height: 490px) {
     .nav-box {
         margin-bottom: 40px;
