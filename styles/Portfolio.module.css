@@ -91,9 +91,10 @@
     margin-left: -17px;
     margin-right: 10px;
 }
-.skills p {
+#Portfolio .skills p {
     /* padding-left: 25px; */
     margin-left: 17px;
+    text-align: left;
 }
 
 .link-box {

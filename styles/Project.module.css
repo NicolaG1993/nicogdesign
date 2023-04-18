@@ -183,6 +183,10 @@
     }
 }
 @media screen and (max-width: 480px) {
+    #Project {
+        padding: 150px 20px;
+    }
+
     #Project h1 {
         font-size: 82px;
     }

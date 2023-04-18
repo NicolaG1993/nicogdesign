@@ -222,6 +222,9 @@
     .picture-box {
         height: 230px;
     }
+    .links-box {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 340px) {
     .picture-box {

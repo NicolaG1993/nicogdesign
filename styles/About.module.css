@@ -96,10 +96,14 @@
         line-height: 2.5em;
     }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
     .headings h1 {
         font-size: 24px;
         line-height: 3.5em;
+    }
+    .text {
+        margin: 0;
+        text-align: justify;
     }
 }
 @media screen and (max-width: 305px) {

@@ -100,30 +100,27 @@ export default function About() {
                     Among the various skills I have practiced and learned are:
                 </p>
                 <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript ES6</li>
-                    <li>React.js (with Hooks and Redux)</li>
-                    <li>Next.js</li>
-                    <li>Vue.js</li>
+                    <li>JavaScript (ES6), HTML 5, CSS3, JSX</li>
+                    <li>React.js (with Hooks and Redux), Next.js, Vue.js</li>
                     <li>SQL (Postgress, Prisma)</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>jQuery</li>
-                    <li>Handlebars</li>
-                    <li>Webpack</li>
-                    <li>npm</li>
-                    <li>Git, GitHub</li>
-                    <li>Command-Line</li>
-                    <li>VS Code</li>
                     <li>
-                        AWS (Amplify, API Gateway, IAM, DynamoDB, Lambda, S3,
-                        Route53)
+                        Node.js, Express, jQuery, Handlebars, Socket.io, axios
                     </li>
+                    <li>Webpack, npm</li>
+                    <li>Git, GitHub, Command-Line, VS Code, Atom</li>
+                    <li>
+                        AWS (Amplify, API Gateway, IAM, DynamoDB, RDS, Lambda,
+                        S3, Route53, SES)
+                    </li>
+                    <li>AWS SDK, Stripe React Native SDK, PayPal JS SDK</li>
+                    <li>REST API&apos;s</li>
                     <li>Heroku, Vercel, Netlify</li>
+                    <li>pgAdmin, SQLWorkbench, ElephantSQL</li>
                     <li>Security: CSRF, Clickjacking</li>
-                    <li>API&apos;s</li>
-                    <li>WordPress</li>
+                    <li>Testing: Jest</li>
+                    <li>WordPress, Shopify</li>
+                    <li>Content Delivery Network: Cloudinary</li>
+                    <li>SEO (Search Engine Optimization)</li>
                 </ul>
 
                 <p>

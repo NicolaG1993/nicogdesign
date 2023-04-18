@@ -36,6 +36,7 @@ const coding = [
             "Brand ID",
             "SEO",
             "Single-Page Application",
+            "Webdesign",
         ],
         stack: [
             "Next.js",
@@ -65,6 +66,8 @@ const coding = [
             // "/project-pics/damamyamamy/screen3.png",
             // "/project-pics/damamyamamy/screen4.png",
             // "/project-pics/damamyamamy/screen5.png",
+            "/project-pics/damamyamamy/Web Mockup.jpg",
+            "/project-pics/damamyamamy/Web-Showcase-Project-Presentation.jpg",
             "/project-pics/damamyamamy/Logo.jpg",
         ],
         urls: {
@@ -115,7 +118,13 @@ const coding = [
     {
         title: "Bordogna Silvano Snc",
         slug: "/projects/bordogna-silvano-snc",
-        tags: ["Web App", "Brand ID", "SEO", "Single-Page Application"],
+        tags: [
+            "Web App",
+            "Brand ID",
+            "SEO",
+            "Single-Page Application",
+            "Webdesign",
+        ],
         stack: [
             "Next.js",
             "JavaScript ES6",
@@ -135,7 +144,11 @@ const coding = [
             "Modern web app to promote and advertise a family-owned plumbing business in the Milan area, Italy. The user can contact the company via a contact form, there is also a photo gallery of the works, divided by category. The website is fully responsive. I was also responsible for the design and branding of the company.",
 
         thumbnail: "/project-pics/bordogna/logo-thumbnail.png",
-        pics: null,
+        pics: [
+            "/project-pics/bordogna/Web Mockup (3).jpg",
+            "/project-pics/bordogna/Web-Showcase-Project-Presentation.jpg",
+            "/project-pics/bordogna/Bordogna Silvano SNC • Logo 17.04.2023.png",
+        ],
         urls: {
             website: "https://www.bordognasilvano.it/",
             github: "https://github.com/NicolaG1993/bordogna-web",

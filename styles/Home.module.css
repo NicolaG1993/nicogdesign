@@ -325,6 +325,17 @@
     }
 }
 @media screen and (max-width: 440px) {
+    .section-intro {
+        padding: 80px 20px;
+    }
+    .section-intro > p {
+        /* font-size: 48px; */
+        max-width: 100%;
+        /* letter-spacing: 0.5px; */
+    }
+    .section-skills div {
+        padding: 200px 20px;
+    }
     .section-skills p {
         max-width: 100%;
     }
