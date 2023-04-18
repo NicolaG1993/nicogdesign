@@ -152,10 +152,13 @@
 }
 @media screen and (max-width: 440px) {
     .nav-box li {
-        font-size: 72px;
+        font-size: 64px;
     }
+    /* .nav-box li {
+        font-size: 72px;
+    } */
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .nav-box li {
         font-size: 52px;
     }
