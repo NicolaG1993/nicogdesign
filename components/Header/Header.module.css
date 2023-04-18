@@ -152,16 +152,16 @@
 }
 @media screen and (max-width: 440px) {
     .nav-box li {
-        font-size: 64px;
+        font-size: 52px;
     }
     /* .nav-box li {
         font-size: 72px;
     } */
 }
 @media screen and (max-width: 420px) {
-    .nav-box li {
+    /* .nav-box li {
         font-size: 52px;
-    }
+    } */
 }
 
 @media screen and (max-height: 590px) {

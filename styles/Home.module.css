@@ -329,7 +329,7 @@
         padding: 80px 20px;
     }
     .section-intro > p {
-        font-size: 42px;
+        font-size: 38px;
         max-width: 100%;
         /* letter-spacing: 0.5px; */
     }
@@ -361,5 +361,8 @@
     }
     #Headline h2 {
         font-size: 64px;
+    }
+    .section-intro > p {
+        font-size: 28px;
     }
 }
