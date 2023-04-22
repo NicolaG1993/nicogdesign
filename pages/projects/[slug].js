@@ -112,9 +112,11 @@ export default function Project({ project }) {
                     </div>
                 )}
 
-                <p className={styles["description"]}>
-                    {project.full_description}
-                </p>
+                {project.full_description.map((str) => (
+                    <p key={str} className={styles["description"]}>
+                        {str}
+                    </p>
+                ))}
 
                 {project.isCode && (
                     <p className={styles["maintained"]}>

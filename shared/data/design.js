@@ -1,19 +1,23 @@
 const design = [
     {
-        title: "NGD",
+        title: "NGD • Brand ID",
         slug: "/projects/ngd",
         tags: ["Brand ID", "Graphic Design"],
         description:
             "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development.",
-        full_description:
+        full_description: [
             "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development. Conception, design, development and promotion of my personal brand. Including logo, graphics, business cards, website, social media and merchandise. The whole brand is based on a minimal color scheme (white, black, red) to enhance the communicative power of contrast alone.",
-        thumbnail: "/project-pics/ngd/ngd-thumb.jpg",
-        pics: ["/project-pics/ngd/ngd-thumb.jpg"],
+        ],
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117943/NGD/Projects/ngd/ngd-thumb_hj7xnp.webp",
+        pics: [
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117943/NGD/Projects/ngd/ngd-thumb_hj7xnp.webp",
+        ],
         urls: null,
         recommended: true,
     },
     {
-        title: "Logo Design and Animation",
+        title: "NGD • Logo Design and Animations",
         slug: "/projects/logo",
         tags: [
             "Brand ID",
@@ -24,15 +28,12 @@ const design = [
         ],
         description:
             "Logo design and animations for NGD. Made with Adobe Illustrator and Adobe AfterEffect. The logo is a revised and improved version of the 2018 one.",
-        full_description:
+        full_description: [
             "Logo design and animations for NGD. Made with Adobe Illustrator and Adobe AfterEffect. The logo is a revised and improved version of the 2018 one.",
-        thumbnail: "/project-pics/ngdlogo/logo-black.jpg",
-        pics: [
-            "/project-pics/ngdlogo/logo-black.jpg",
-            "/project-pics/ngdlogo/logo-white.jpg",
-            "/project-pics/ngdlogo/logo-black2.png",
-            "/project-pics/ngdlogo/logo-white2.png",
         ],
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682182942/NGD/Projects/ngd/logo/ngd-logo-thumb-white_pnshnf.jpg",
+        pics: [],
         urls: {
             clips: [
                 "https://www.artstation.com/artwork/8elERR",
@@ -49,13 +50,15 @@ const design = [
         tags: ["Brand ID", "Logo Design", "Web Design"],
         description:
             "First version of my brand dating back to the end of 2018, when I finished my studies as a graphic designer. The website was designed as a graphic designer portfolio, as I was yet to start studying web programming. I certainly remember it as a big step-up in my webdesign skills with HTML and CSS. Note that I have implemented some JavaScript scripts without having any knowledge at the time. The version of this website is no longer hosted.",
-        full_description:
+        full_description: [
             "First version of my brand dating back to the end of 2018, when I finished my studies as a graphic designer. The website was designed as a graphic designer portfolio, as I was yet to start studying web programming. I certainly remember it as a big step-up in my webdesign skills with HTML and CSS. Note that I have implemented some JavaScript scripts without having any knowledge at the time. The version of this website is no longer hosted.",
-        thumbnail: "/project-pics/ngd2019/mock.png",
+        ],
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117088/NGD/Projects/ngd/ngd-2019/mock_tghfxy.webp",
         pics: [
-            "/project-pics/ngd2019/mock.png",
-            "/project-pics/ngd2019/mock2.png",
-            "/project-pics/ngd2019/banner.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117088/NGD/Projects/ngd/ngd-2019/mock2_omwsgo.webp",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117088/NGD/Projects/ngd/ngd-2019/mock_tghfxy.webp",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117088/NGD/Projects/ngd/ngd-2019/banner_foowqs.webp",
         ],
         urls: null,
         recommended: true,
@@ -66,13 +69,13 @@ const design = [
         tags: ["Brand ID", "Logo Design", "Web Design"],
         description:
             "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
-        full_description:
+        full_description: [
             "Brand design and website for independent record label. Unfortunately the label has been closed down and the website is no longer active, at the moment it is only possible for me to show some old screenshots of the website and the logo of the label.",
-        thumbnail: "/project-pics/incirclerecords/mock.png",
+        ],
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682118026/NGD/Projects/design/in-circle-records/mock_z7zqel.webp",
         pics: [
-            "/project-pics/incirclerecords/mock.png",
-            "/project-pics/incirclerecords/mobile.png",
-            "/project-pics/incirclerecords/tablet.png",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682118026/NGD/Projects/design/in-circle-records/mock_z7zqel.webp",
         ],
         urls: null,
     },
@@ -88,21 +91,23 @@ const design = [
         ],
         description:
             "Final project for my studies at AID Berlin. The project was the conception and development of graphics and material to promote a garage rock band called 'ZERO'. I created the logo and various graphics, then printed 2 albums (vinyl and CD version) 2 t-shirts, 3 posters.",
-        full_description:
+        full_description: [
             "Final project for my studies at AID Berlin. The project was the conception and development of graphics and material to promote a garage rock band called 'ZERO'. I created the logo and various graphics, then printed 2 albums (vinyl and CD version) 2 t-shirts, 3 posters.",
-        thumbnail: "/project-pics/zero/thumb.jpg",
+        ],
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116956/NGD/Projects/design/zero/thumb_wvlqwh.jpg",
         pics: [
-            "/project-pics/zero/ZERO-mock4.jpg",
-            "/project-pics/zero/ZERO-mock2.jpg",
-            "/project-pics/zero/ZERO-mock1.jpg",
-            "/project-pics/zero/ZERO-mock3.jpg",
-            "/project-pics/zero/ZERO-poster1.jpg",
-            "/project-pics/zero/ZERO-poster2.jpg",
-            "/project-pics/zero/ZERO-illustration1.jpg",
-            "/project-pics/zero/ZERO-illustration2.jpg",
-            "/project-pics/zero/ZERO-illustration3.jpg",
-            "/project-pics/zero/ZERO-illustration4.jpg",
-            "/project-pics/zero/ZERO-illustration5.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116980/NGD/Projects/design/zero/ZERO-mock4_z6n8hg.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116965/NGD/Projects/design/zero/ZERO-mock2_ikmyoj.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116967/NGD/Projects/design/zero/ZERO-mock1_bn6axy.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116973/NGD/Projects/design/zero/ZERO-mock3_rtcgfo.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116973/NGD/Projects/design/zero/ZERO-poster1_npst0d.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116963/NGD/Projects/design/zero/ZERO-poster2_uxpvv5.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116969/NGD/Projects/design/zero/ZERO-illustration1_x1zksh.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116960/NGD/Projects/design/zero/ZERO-illustration2_w953s5.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116959/NGD/Projects/design/zero/ZERO-illustration3_bgtniv.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116966/NGD/Projects/design/zero/ZERO-illustration4_e9p5za.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682116963/NGD/Projects/design/zero/ZERO-illustration5_wn3zy3.jpg",
         ],
         urls: null,
         recommended: true,

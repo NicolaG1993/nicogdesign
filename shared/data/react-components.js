@@ -11,7 +11,8 @@ const reactComponents = [
         stack: ["React", "JavaScript (ES6)", "CSS3", "JSX", "localStorage"],
         // description: `This is a tool to generate random numbers, customize the settings and decide if they should be unique numbers or not. You also have an area for taking notes, which will remain available even when the page is reloaded thanks to the use of localStorage to store them. This tool is ideal for replacing dice in board games and role-playing games (for example "D&D" where dice with different number of faces are required).`,
         full_description: `This is a tool to generate random numbers, customize the settings and decide if they should be unique numbers or not. You also have an area for taking notes, which will remain available even when the page is reloaded thanks to the use of localStorage to store them. This tool is ideal for replacing dice in board games and role-playing games (for example "D&D" where dice with different number of faces are required).`,
-        thumbnail: "/project-pics/tools/random-numbers.png",
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682110424/NGD/Projects/tools/dices_ttimmk.png",
         // pics: null,
         // urls: null,
         // maintained: true,
@@ -25,7 +26,8 @@ const reactComponents = [
         stack: ["React", "JavaScript (ES6)", "CSS3", "JSX"],
         full_description:
             "UI Component used to represent a structure with dropdown menus. The object passed as a prop is looped and rendered differently for each level, based on whether the loop encounters an array or an object.",
-        thumbnail: "/project-pics/misc/ui.png",
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682175410/NGD/Projects/tools/ui-new_rulloe.png",
         props: {
             obj: {
                 animals: {
@@ -47,7 +49,8 @@ const reactComponents = [
         tags: ["Component"],
         stack: ["JavaScript (ES6)", "CSS3", "JSX"],
         full_description: `UI Component used to display alerts for user, ideal if used to show the result of server requests. Render a different type of alert if "error" or "success" are present in the props.`,
-        thumbnail: "/project-pics/misc/ui.png",
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682175410/NGD/Projects/tools/ui-new_rulloe.png",
         // dynamic_props: { error: {}, success: true },
         dynamic_props: [
             { text: "Generate Error", props: { error: "404 • Not Found!" } },

@@ -8,6 +8,8 @@ module.exports = {
         defaultLocale: "it",
     },
 
+    images: { domains: ["res.cloudinary.com"] },
+
     env: {
         REACT_AWS_KEY: process.env.REACT_AWS_KEY,
         REACT_AWS_SECRET: process.env.REACT_AWS_SECRET,
