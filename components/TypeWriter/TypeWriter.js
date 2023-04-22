@@ -7,18 +7,19 @@ export default function TypeWriter() {
         ` I'm Nick. `,
         `Web Developer. `,
         `Graphic Designer.`
-    );
+    ); // array of strings
     const iSpeed = 100; // time delay of print out
-    let iIndex = 0; // start printing array at this posision
-    let iArrLength = aText[0].length; // the length of the text array
+    let iIndex = 0; // which string are we currently printing
+    let iArrLength = aText[0].length; // the length of the string we are printing
     const iScrollAt = 20; // start scrolling up at this many lines
 
-    let iTextPos = 0; // initialise text position
-    let sContents = ""; // initialise contents variable
-    let iRow;
+    let iTextPos = 0; // current string index
+    let sContents = ""; // string already printed (not letters!)
+    let iRow; // é come iIndex ma aumenta dopo la prima lettera (forse serve x contare righe in qualche modo strano)
 
     const writer = () => {
         sContents = " ";
+
         iRow = Math.max(0, iIndex - iScrollAt);
         const destination = document.getElementById("typewriter"); //document exist only after component mount
 
@@ -27,15 +28,24 @@ export default function TypeWriter() {
                 ? (sContents += aText[iRow++] + "<br />")
                 : (sContents += aText[iRow++]);
         } //line break dopo seconda array
-        destination.innerHTML =
-            sContents + aText[iIndex].substring(0, iTextPos) + "<span></span>";
+
+        if (aText[iIndex]) {
+            destination.innerHTML =
+                sContents +
+                aText[iIndex].substring(0, iTextPos) +
+                "<span></span>";
+        }
 
         if (iTextPos++ == iArrLength) {
             iTextPos = 0;
             iIndex++;
             if (iIndex != aText.length) {
-                iArrLength = aText[iIndex].length;
-                setTimeout(() => writer(), 700);
+                if (!aText[iIndex]) {
+                    return; // end
+                } else {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout(() => writer(), 700);
+                }
             }
         } else {
             setTimeout(() => writer(), iSpeed);
