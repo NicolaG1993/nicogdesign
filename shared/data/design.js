@@ -33,7 +33,12 @@ const design = [
         ],
         thumbnail:
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682182942/NGD/Projects/ngd/logo/ngd-logo-thumb-white_pnshnf.jpg",
-        pics: [],
+        pics: [
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_1_plr92d.png",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_2_pzuoxn.png",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_Alternatives_zjnfsv.png",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_History_ujtoyt.png",
+        ],
         urls: {
             clips: [
                 "https://www.artstation.com/artwork/8elERR",
@@ -42,6 +47,7 @@ const design = [
                 "https://www.artstation.com/artwork/3doQLo",
             ],
         },
+        recommended: true,
     },
 
     {
