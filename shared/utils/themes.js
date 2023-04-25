@@ -14,6 +14,8 @@ function keepTheme() {
             setTheme("theme-dark");
         } else if (localStorage.getItem("ngd-theme") === "theme-light") {
             setTheme("theme-light");
+        } else if (localStorage.getItem("ngd-theme") === "theme-matrix") {
+            setTheme("theme-matrix");
         }
     } else {
         setTheme("theme-light");

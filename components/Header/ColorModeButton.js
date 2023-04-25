@@ -24,6 +24,10 @@ export default function ColorModeButton() {
             setTheme("theme-dark");
             setSelectedTheme("theme-dark");
             dispatch(setColor("theme-dark"));
+        } else if (arg === "matrix") {
+            setTheme("theme-matrix");
+            setSelectedTheme("theme-matrix");
+            dispatch(setColor("theme-matrix"));
         }
     };
 
@@ -42,7 +46,8 @@ export default function ColorModeButton() {
     return (
         <div className={styles["color-mode-wrap"]}>
             <span onClick={() => handleColor("light")}>Light</span> <p>/</p>{" "}
-            <span onClick={() => handleColor("dark")}>Dark</span>
+            <span onClick={() => handleColor("dark")}>Dark</span> <p>/</p>{" "}
+            <span onClick={() => handleColor("matrix")}>Matrix</span>
         </div>
     );
 }
