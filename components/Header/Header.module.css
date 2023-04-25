@@ -29,6 +29,19 @@
 
     /* font-weight: 900;
     font-family: "Roboto", Arial, Helvetica, sans-serif; */
+    max-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo svg {
+    height: 40px;
+    fill: var(--text);
+    transition: 0.15s ease;
+}
+.header-logo svg:hover {
+    fill: var(--text-hover);
+    height: 41px;
 }
 
 .header-box > div:nth-child(2) {

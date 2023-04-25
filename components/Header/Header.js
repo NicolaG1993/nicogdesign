@@ -3,6 +3,7 @@ import Link from "next/link";
 import Facebook from "./assets/facebook.svg";
 import Instagram from "./assets/instagram.svg";
 import WhatsApp from "./assets/whatsapp.svg";
+import Logo from "../../public/NGD • Logo 1.svg";
 
 function Header({ close, toggle }) {
     return (
@@ -13,7 +14,8 @@ function Header({ close, toggle }) {
                     className={styles["header-logo"]}
                     onClick={close}
                 >
-                    NGD
+                    {/* NGD */}
+                    <Logo />
                 </Link>
 
                 <div className={styles["header-box"]}>

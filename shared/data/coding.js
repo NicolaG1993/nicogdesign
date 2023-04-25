@@ -124,8 +124,8 @@ const coding = [
         recommended: true,
     },
     {
-        title: "Bordogna Silvano Snc",
-        slug: "/projects/bordogna-silvano-snc",
+        title: "Bordogna Silvano Snc • Website",
+        slug: "/projects/bordogna-silvano-snc-website",
         tags: [
             "Web App",
             "Brand ID",
@@ -294,6 +294,26 @@ const coding = [
             github: "https://github.com/NicolaG1993/heiltherapien-de-felice.com",
         },
         maintained: true,
+    },
+    {
+        title: "NGD • Website 2019",
+        slug: "/projects/ngd2019",
+        tags: ["Website", "Webdesign", "SEO"],
+        stack: ["JavaScript ES6", "CSS3", "HTML5", "Hostgator"],
+        description:
+            "First version of my brand website dating back to the end of 2018, when I finished my studies as a graphic designer. The website was designed as a graphic designer portfolio, as I was yet to start studying web programming. I certainly remember it as a big step-up in my webdesign skills with HTML and CSS. Note that I have implemented some JavaScript scripts without having any knowledge at the time. The version of this website is no longer hosted.",
+        full_description: [
+            "First version of my brand website dating back to the end of 2018, when I finished my studies as a graphic designer. The website was designed as a graphic designer portfolio, as I was yet to start studying web programming. I certainly remember it as a big step-up in my webdesign skills with HTML and CSS. Note that I have implemented some JavaScript scripts without having any knowledge at the time. The version of this website is no longer hosted.",
+        ],
+        thumbnail:
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682387920/NGD/Projects/ngd/logo/thumbnail2023_yiqqxh.png",
+        pics: [
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117088/NGD/Projects/ngd/ngd-2019/mock2_omwsgo.webp",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117088/NGD/Projects/ngd/ngd-2019/mock_tghfxy.webp",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117088/NGD/Projects/ngd/ngd-2019/banner_foowqs.webp",
+        ],
+        urls: null,
+        recommended: false,
     },
     {
         title: "GINGIO • The Poyel Angels",
