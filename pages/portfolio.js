@@ -264,7 +264,7 @@ export default function Portfolio() {
                 </Link>
 
                 <a
-                    href={"/documents/CV.pdf"}
+                    href={"/documents/Nicola Gaioni • CV 2023.pdf"}
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"
