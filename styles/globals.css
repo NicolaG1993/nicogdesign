@@ -77,18 +77,8 @@
     --bg100: rgb(10, 17, 40);
     --bg200: #383c42;
     --bg300: #3a5f43;
-    --bg400: rgb(18, 130, 162);
+
     --bg500: rgb(4, 4, 15);
-    --bg600: rgb(0, 140, 255);
-    --color-overlay: rgba(0, 140, 255, 0.445);
-    --color000: rgb(142, 202, 230);
-    --color100: cornflowerblue;
-    --color200: rgb(0, 140, 255);
-
-    --text-color: rgb(0, 140, 255);
-
-    --selection: rgba(142, 202, 230, 0.75);
-    --logo: url(../components/Logo/assets/logo-white.png);
 }
 
 html {

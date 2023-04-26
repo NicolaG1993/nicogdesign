@@ -159,6 +159,7 @@
     /* box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); */
     -webkit-filter: drop-shadow(0 0 11px rgba(33, 33, 33, 0.2));
     filter: drop-shadow(0 0 11px rgba(33, 33, 33, 0.2));
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 780px) {

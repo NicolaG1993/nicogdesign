@@ -157,7 +157,7 @@ const coding = [
         pics: [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682106449/NGD/Projects/bordogna-silvano-snc/Web_Mockup_compressed_k5i2n0.jpg",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682106447/NGD/Projects/bordogna-silvano-snc/Web-Showcase-Project-Presentation_compressed_abezo2.jpg",
-            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682106515/NGD/Projects/bordogna-silvano-snc/Bordogna_Silvano_SNC_Logo_17.04.2023_etxyt5.png",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682388774/NGD/Projects/bordogna-silvano-snc/Bordogna_Silvano_SNC_Logo_Presentation_Alternatives_i9gxjq.png",
         ],
         urls: {
             website: "https://www.bordognasilvano.it/",

@@ -6,12 +6,15 @@ const design = [
         description:
             "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development.",
         full_description: [
-            "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development. Conception, design, development and promotion of my personal brand. Including logo, graphics, business cards, website, social media and merchandise. The whole brand is based on a minimal color scheme (white, black, red) to enhance the communicative power of contrast alone.",
+            "NGD was created on a belief in the power of 'ideas' and the fact that they create a huge impact through their development. Conception, design, development and promotion of my personal brand. Including logo, graphics, business cards, website, social media and merchandise. The whole brand is based on a minimal color scheme (white, black, one color - usually red or blue) to enhance the communicative power of contrast alone.",
         ],
         thumbnail:
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682387920/NGD/Projects/ngd/logo/thumbnail2023_yiqqxh.png",
         pics: [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117943/NGD/Projects/ngd/ngd-thumb_hj7xnp.webp",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461651/NGD/Projects/ngd/ngd-2023/Logo_Sign_Mockup_hqspjp.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461642/NGD/Projects/ngd/ngd-2023/Logo_Shopping_Bag_Mockup_3_hjxymn.jpg",
+            // "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682467104/NGD/Projects/ngd/ngd-2023/Logo_Wax_Mockup_B_tywlmo.jpg",
         ],
         urls: null,
         recommended: true,
@@ -38,6 +41,14 @@ const design = [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_2_pzuoxn.png",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_Alternatives_zjnfsv.png",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_History_ujtoyt.png",
+
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461649/NGD/Projects/ngd/ngd-2023/Logo_Paper_Mockup_sd5z4y.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461649/NGD/Projects/ngd/ngd-2023/Logo_Paper_Mockup_-_B_y2kgjn.jpg",
+            // "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461650/NGD/Projects/ngd/ngd-2023/Logo_Paper_Mockup_5_adgno3.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461651/NGD/Projects/ngd/ngd-2023/Logo_Sign_Mockup_hqspjp.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461642/NGD/Projects/ngd/ngd-2023/Logo_Shopping_Bag_Mockup_3_hjxymn.jpg",
+            // "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461644/NGD/Projects/ngd/ngd-2023/Logo_Shopping_Bag_Mockup_2_a9kyav.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461658/NGD/Projects/ngd/ngd-2023/Logo_3d_Mockup_xb7rhk.jpg",
         ],
         urls: {
             clips: [
