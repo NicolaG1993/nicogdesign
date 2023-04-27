@@ -15,7 +15,7 @@ const design = [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682565766/NGD/Projects/ngd/ngd-2023/NGD_Stationery_Mockup_k79dny.png",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461651/NGD/Projects/ngd/ngd-2023/Logo_Sign_Mockup_hqspjp.jpg",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461642/NGD/Projects/ngd/ngd-2023/Logo_Shopping_Bag_Mockup_3_hjxymn.jpg",
-            // "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682467104/NGD/Projects/ngd/ngd-2023/Logo_Wax_Mockup_B_tywlmo.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682467104/NGD/Projects/ngd/ngd-2023/Logo_Wax_Mockup_B_tywlmo.jpg",
         ],
         urls: null,
         recommended: true,
