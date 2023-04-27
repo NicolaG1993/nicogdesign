@@ -12,6 +12,7 @@ const design = [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682387920/NGD/Projects/ngd/logo/thumbnail2023_yiqqxh.png",
         pics: [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682117943/NGD/Projects/ngd/ngd-thumb_hj7xnp.webp",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682565766/NGD/Projects/ngd/ngd-2023/NGD_Stationery_Mockup_k79dny.png",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461651/NGD/Projects/ngd/ngd-2023/Logo_Sign_Mockup_hqspjp.jpg",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461642/NGD/Projects/ngd/ngd-2023/Logo_Shopping_Bag_Mockup_3_hjxymn.jpg",
             // "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682467104/NGD/Projects/ngd/ngd-2023/Logo_Wax_Mockup_B_tywlmo.jpg",
@@ -43,7 +44,7 @@ const design = [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682312387/NGD/Projects/ngd/logo/NGD_Logo_Presentation_History_ujtoyt.png",
 
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461649/NGD/Projects/ngd/ngd-2023/Logo_Paper_Mockup_sd5z4y.jpg",
-            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461649/NGD/Projects/ngd/ngd-2023/Logo_Paper_Mockup_-_B_y2kgjn.jpg",
+            // "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461649/NGD/Projects/ngd/ngd-2023/Logo_Paper_Mockup_-_B_y2kgjn.jpg",
             // "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461650/NGD/Projects/ngd/ngd-2023/Logo_Paper_Mockup_5_adgno3.jpg",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461651/NGD/Projects/ngd/ngd-2023/Logo_Sign_Mockup_hqspjp.jpg",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682461642/NGD/Projects/ngd/ngd-2023/Logo_Shopping_Bag_Mockup_3_hjxymn.jpg",
