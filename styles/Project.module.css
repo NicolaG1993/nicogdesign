@@ -193,6 +193,9 @@
     #Project h1 {
         font-size: 82px;
     }
+    .picture-box {
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width: 440px) {
     #Project h1 {
