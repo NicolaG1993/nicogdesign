@@ -40,7 +40,8 @@ export default function ReactComponents() {
             [key]: !navStatus[key],
         }));
 
-    const toggleNavUI = () => setNavActive(!navActive);
+    const toggleNavUI = () =>
+        isSmallDevice ? setNavActive(!navActive) : setNavActive(true);
 
     useEffect(
         () => (width > 720 ? setIsSmallDevice(false) : setIsSmallDevice(true)),
@@ -96,15 +97,16 @@ export default function ReactComponents() {
                                                         ? `${styles["el"]} ${styles["selected"]}`
                                                         : styles["el"]
                                                 }
-                                                onClick={() =>
+                                                onClick={() => (
                                                     setSelected(
                                                         selected &&
                                                             el.title ===
                                                                 selected.title
                                                             ? ""
                                                             : el
-                                                    )
-                                                }
+                                                    ),
+                                                    toggleNavUI()
+                                                )}
                                             >
                                                 {el.title}
                                             </div>

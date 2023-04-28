@@ -34,7 +34,8 @@ export default function JSUtils() {
             ...prev,
             [key]: !navStatus[key],
         }));
-    const toggleNavUI = () => setNavActive(!navActive);
+    const toggleNavUI = () =>
+        isSmallDevice ? setNavActive(!navActive) : setNavActive(true);
 
     useEffect(
         () => (selected ? renderFunction(selected) : setResult()),
@@ -90,15 +91,16 @@ export default function JSUtils() {
                                                         ? `${styles["el"]} ${styles["selected"]}`
                                                         : styles["el"]
                                                 }
-                                                onClick={() =>
+                                                onClick={() => (
                                                     setSelected(
                                                         selected &&
                                                             el.title ===
                                                                 selected.title
                                                             ? ""
                                                             : el
-                                                    )
-                                                }
+                                                    ),
+                                                    toggleNavUI()
+                                                )}
                                             >
                                                 {el.title}
                                             </div>
