@@ -75,6 +75,9 @@ const design = [
         pics: [
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682388774/NGD/Projects/bordogna-silvano-snc/Bordogna_Silvano_SNC_Logo_Presentation_1_ggrngo.png",
             "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682388774/NGD/Projects/bordogna-silvano-snc/Bordogna_Silvano_SNC_Logo_Presentation_Alternatives_i9gxjq.png",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682655563/NGD/Projects/bordogna-silvano-snc/Bordogna_Silvano_snc_Business_Card_Mockup_compressed_yuj65l.jpg",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682654518/NGD/Projects/bordogna-silvano-snc/Bordogna_Silvano_snc_Stationery_Mockup_compressed_sbg9io.png",
+            "https://res.cloudinary.com/dg4i4hspr/image/upload/v1682661317/NGD/Projects/bordogna-silvano-snc/Bordogna_Silvano_snc_Van_Mockup_Compressed_zaznmx.jpg",
         ],
         recommended: true,
     },
